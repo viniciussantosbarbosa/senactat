@@ -8,7 +8,7 @@ O UTM/NGFW pfSENSE é uma das melhores soluções Open Source de Firewall, Proxy
 
 Hoje o pfSense também pode ser considerado um NGFW (Next Generation Firewall), possibilitando a integração de serviços como: Firewall, Proxy, Antivírus, IDS/IPS, Balanceamento de Carga, Relatórios e Inspeção Profunda de Pacotes (DPI).
 
-[![pfSense 2.6](http://img.youtube.com/vi/rguyRA1hMLR/0.jpg)](https://www.youtube.com/watch?v=guyRA1hMLRg "pfSense 2.6")
+[![pfSense 2.6](http://img.youtube.com/vi/guyRA1hMLRg/0.jpg)](https://www.youtube.com/watch?v=guyRA1hMLRg "pfSense 2.6")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=guyRA1hMLRg
 
