@@ -35,10 +35,10 @@ clock set ??:??:?? ?? ???????? ????
 	enable secret 123@senac
   
 	!Criação dos usuários, senhas do Tipo-5 e privilegios diferenciados
-	!Consultar Planilha de Nomes de Usuários do Grupo
+	!OBSERVAÇÃO: Consultar Planilha de Nomes de Usuários do Grupo
 	!OBSERVAÇÃO IMPORTANTE: se o grupo tiver mais integrandes, acréscentar no script
-	username ???nome_do_primeiro_integrante privilege 15 secret 123@senac
-	username ???nome_do_segundo_integrante privilege 15 secret 123@senac
+	username ??nomealuno?? privilege 15 secret 123@senac
+	username ??nomealuno?? privilege 15 secret 123@senac
 
 	!Configuração do nome de domínio, obrigatório para a configuração do SSH
 	ip domain-name senac.br

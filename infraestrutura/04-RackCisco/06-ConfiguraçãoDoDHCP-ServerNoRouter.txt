@@ -21,7 +21,7 @@ enable
 			dns-server 8.8.8.8 8.8.4.4
 			
 			!Configurando o Nome de Domínio do Pool da LAN
-			domain-name cisco.com
+			domain-name senac.br
 			
 			!Saindo de todos os níveis
 			end
