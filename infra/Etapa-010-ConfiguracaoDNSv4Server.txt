@@ -42,27 +42,25 @@
 !OBSERVAÇÃO: no Cisco Packet Tracer as configuração de Sintaxe são limitadas somente ao tipos: A, CNAME, SOA e NS.
 !OBSERVAÇÃO: no Cisco Packet Tracer temos apenas a configuração da Zona de Pesquisa Direta
 
-!ERRATA: correção do nome do NS para: ns1.vaamonde.pti e correção do Server Name para: server-02
-!ERRATA: correção do nome do SOA do Server Name para: ns1.vaamonde.pti
+!ERRATA: correção do nome do NS para: ns1.senac.br e correção do Server Name para: server-02
+!ERRATA: correção do nome do SOA do Server Name para: ns1.senac.br
 !ERRATA: no vídeo os registros dos Switch e Router foram criados com o Tipo: CNAME, correto é: A Record
 
 !DNS Service:		On
 !Resource Records:	Name = server-02			Type = A Record		Address = 192.168.3.1
-!Resource Records:	Name = ns1.vaamonde.pti		Type = NS			Server Name = server-02
-!Resource Records:	Name = vaamonde.pti			Type = SOA			Primary Server Name = ns1.vaamonde.pti
-															 		Mail Box = vaamonde@vaamonde.pti
+!Resource Records:	Name = ns1.senac.br			Type = NS			Server Name = server-02
+!Resource Records:	Name = senac.br				Type = SOA			Primary Server Name = ns1.senac.br
+															 		Mail Box = senac@senac.br
 															 		Minimum TTL = 3600
 															 		Refresh Time = 3600
 															 		Retry Time = 600
 															 		Expiry Time = 86400
-!Resource Records:	Name = vaamonde.pti			Type = CNAME		Host Name = server-02
-!Resource Records:	Name = www.vaamonde.pti		Type = CNAME		Host Name = server-02
-!Resource Records:	Name = pop3.vaamonde.pti	Type = CNAME		Host Name = server-02
-!Resource Records:	Name = smtp.vaamonde.pti	Type = CNAME		Host Name = server-02
-!Resource Records:	Name = ftp.vaamonde.pti		Type = CNAME		Host Name = server-02
-!Resource Records:	Name = tftp.vaamonde.pti	Type = CNAME		Host Name = server-02
-!Resource Records:	Name = ntp.vaamonde.pti		Type = CNAME		Host Name = server-02
-!Resource Records:	Name = log.vaamonde.pti		Type = CNAME		Host Name = server-02
+!Resource Records:	Name = senac.br				Type = CNAME		Host Name = server-02
+!Resource Records:	Name = www.senac.br			Type = CNAME		Host Name = server-02
+!Resource Records:	Name = pop3.senac.br		Type = CNAME		Host Name = server-02
+!Resource Records:	Name = smtp.senac.br		Type = CNAME		Host Name = server-02
+!Resource Records:	Name = ftp.senac.br			Type = CNAME		Host Name = server-02
+!Resource Records:	Name = tftp.senac.br		Type = CNAME		Host Name = server-02
 !Resource Records:	Name = sw-l2-2960-3			Type = A Record		Address = 192.168.3.250
 !Resource Records:	Name = sw-l2-2960-4			Type = A Record		Address = 192.168.3.251
 !Resource Records:	Name = sw-l3-3560-1			Type = A Record		Address = 192.168.3.252

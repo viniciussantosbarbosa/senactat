@@ -69,7 +69,7 @@ show ip interface brief
 
 ==============================================================================================
 
-!Automação da configuração do Switch 2
+!Automação da configuração do Switch Layer 2 2960
 
 !Acessando o modo EXEC Privilegiado
 enable

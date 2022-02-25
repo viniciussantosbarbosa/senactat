@@ -48,15 +48,9 @@
 
 SMTP Service		On
 POP3 Service		On
-Domain Name			vaamonde.pti 	SET
-User Setup			User: robsonvaamonde	Password: 123456	(+)		Email: robsonvaamonde@vaamonde.pti
-					User: leandroramos		Password: 123456	(+)		Email: leandroramos@vaamonde.pti
-					User: josedeassis		Password: 123456	(+)		Email: josedeassis@vaamonde.pti
-					User: jeffersoncosta	Password: 123456	(+)		Email: jeffersoncosta@vaamonde.pti
-					User: rogeriosampaio	Password: 123456	(+)		Email: rogeriosampaio@vaamonde.pti
-					User: sirlenesanches	Password: 123456	(+)		Email: sirlenesanches@vaamonde.pti
-					User: denisnovais		Password: 123456	(+)		Email: denisnovais@vaamonde.pti
-					User: vaamonde			Password: 123456	(+)		Email: vaamonde@vaamonde.pti
+Domain Name			senac.br 	SET
+User Setup			User: robsonvaamonde	Password: 123@senac	(+)		Email: robsonvaamonde@senac.br
+					User: leandroramos		Password: 123@senac	(+)		Email: leandroramos@senac.br
 
 !SEGUNDA ETAPA: Configurações do Clientes de SMTP e POP3 no Cisco Packet Tracer
 !DICA: o principal cliente de e-mail utilizado hoje em dia no mercado corporativo é o: Microsoft Outlook
@@ -64,19 +58,19 @@ User Setup			User: robsonvaamonde	Password: 123456	(+)		Email: robsonvaamonde@va
 !OBSERVAÇÃO: não confundir Cliente de Email com Webmail, nesse caso o acesso e feito via Navegador
 
 !Testando as resoluções de nome do SMTP e POP3
-nslookup smtp.vaamonde.pti
-nsllokup pop3.vaamonde.pti
+nslookup smtp.senac.br
+nsllokup pop3.senac.br
 
 !Configurando o cliente de email
 Configure Mail
 Your Name				Admin SOA
-Email Address			vaamonde@vaamonde.pti
+Email Address			robsonvaamonde@senac.br
 
 Server Information
-Incoming Mail Server	pop3.vaamonde.pti
-Outgoing Mail Server	smtp.vaamonde.pti
+Incoming Mail Server	pop3.senac.br
+Outgoing Mail Server	smtp.senac.br
 
 Logon Information
-User Name				vaamonde
-Password				123456
+User Name				robsonvaamonde
+Password				123@senac
 (SAVE)

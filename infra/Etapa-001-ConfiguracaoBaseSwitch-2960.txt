@@ -34,7 +34,7 @@ enable
 !EXEMPLO: April ou Apr | November ou Nov | December ou Dec
 !EXEMPLO: Hora no formato universal: Hora:Minutos:Segundos 00:00:00 - Data no formato: Dia Mês Ano Completo
 !DICA: é recomendado utilizar o Protocolo NTP (Network Time Protocol) para sincroniza a Data e Hora no Switch
-clock set 14:00:00 29 November 2021
+clock set 14:00:00 29 February 2022
 
 	!Acessando o modo de Configuração Global de comandos do Cisco IOS
 	!DICA: nesse modo que e feita a maioria das configurações do Cisco IOS tanto no Switch como no Router
@@ -75,7 +75,7 @@ clock set 14:00:00 29 November 2021
 	!Habilitando o uso senha do Tipo-5 Secret para acessar o modo EXEC Privilegiado do Cisco IOS
 	!DICA: senhas do Tipo-5 por padrão utilizam criptografia forte (Algoritimo MD5)
 	!OBSERVAÇÃO: por padrão o acesso ao modo EXEC Privilegiado é liberado sem segurança
-	enable secret vaamonde@pti
+	enable secret 123@senac
   
 	!Criação dos usuários locais utilizando senhas do Tipo-5 ou Tipo-7 e privilégios diferenciados
 	!DICA: existe 16 níveis de privilégios no Cisco IOS (0 mais baixo até 15 mais alto)
@@ -83,9 +83,8 @@ clock set 14:00:00 29 November 2021
 	!DICA: existe a possibilidade de se autenticar no Switch utilizando os protocolos RADIUS ou TACACS
 	!DICA: usuários com Privilégio 15 não precisa digitar o comando enable após se logar no Switch ou Router
 	!OBSERVAÇÃO: criação de usuários comuns para administrar o Switch, privilégio padrão recomendado: 1
-	username robson secret vaamonde@pti
-	username vaamonde password vaamonde@pti
-	username admin privilege 15 secret vaamonde@pti
+	username senac secret 123@senac
+	username admin privilege 15 secret 123@senac
 	
 	!Acessando a Linha (line) Console, porta padrão de acesso Out-of-Band (Fora da Banda) do Switch Cisco
 	!DICA: conexão feita utilizando o Cabo Console RS232/DB9 ou USB e software de Acesso ao Console (PuTTY)
@@ -104,7 +103,7 @@ clock set 14:00:00 29 November 2021
 		!segurança da criptografia não importa mais, pois é uma invasão física não lógica)
 		!OBSERVAÇÃO: essa configuração só será utilizada caso não exista usuários locais criados e se 
 		!a opção do comando: login local não for configurada.
-		password vaamonde@pti
+		password 123@senac
 		
 		!Habilitando o sincronismo das mensagens de Logs na tela do terminal do Cisco IOS
 		!DICA: esse recurso ajuda bastante, pois as mensagens na tela não irão atrapalha na digitação
@@ -132,11 +131,11 @@ show running-config
 
 ==============================================================================================
 
-!Automação da configuração do Switch 2
+!Automação da configuração do Switch Layer 2 2960
 enable
 
 !Configuração de Data/Hora em inglês, você pode usar abreviado ou completo
-clock set 14:00:00 16 April 2020
+clock set 14:00:00 29 February 2022
 
 	!Acessando o modo de configuração global de comandos
 	configure terminal
@@ -157,12 +156,11 @@ clock set 14:00:00 16 April 2020
 	banner motd #AVISO: acesso autorizado somente a funcionarios#
   
 	!Habilitando o uso senha do Tipo-5 Secret para acessar o modo EXEC Privilegiado
-	enable secret vaamonde@pti
+	enable secret 123@senac
   
 	!Criação dos usuários locais utilizando senhas do Tipo-5 ou Tipo-7 e privilégios diferenciados
-	username robson secret vaamonde@pti
-	username vaamonde password vaamonde@pti
-	username admin privilege 15 secret vaamonde@pti
+	username senac secret 123@senac
+	username admin privilege 15 secret 123@senac
 	
 	!Acessando a linha console, porta padrão de acesso Out-of-Band (Fora da Banda)
 	line console 0
@@ -171,7 +169,7 @@ clock set 14:00:00 16 April 2020
 		login local
 		
 		!Habilitando senha de acesso do Tipo-7 Password
-		password vaamonde@pti
+		password 123@senac
 		
 		!Sincronizando as mensagens de logs na tela
 		logging synchronous
