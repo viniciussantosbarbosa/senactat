@@ -15,6 +15,7 @@ Testado e homologado no GNU/Linux Ubuntu Server 20.04.3 LTS
 
 Atualização da versão do Ubuntu Server 20.04.3: https://wiki.ubuntu.com/FocalFossa/ReleaseNotes<br>
 Mudanças da versão do Ubuntu Server 20.04.3: https://wiki.ubuntu.com/FocalFossa/ReleaseNotes/ChangeSummary/20.04.3<br>
+Mudanças da versão do Ubuntu Server 20.04.4: https://wiki.ubuntu.com/FocalFossa/ReleaseNotes/ChangeSummary/20.04.4<br>
 Ciclo de Lançamento do Ubuntu Server: https://ubuntu.com/about/release-cycle
 
 OBS1 - lentidão da instalação e configuração do Ubuntu Server 20.04.x no Oracle VirtualBOX<br>

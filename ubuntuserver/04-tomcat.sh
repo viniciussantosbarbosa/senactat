@@ -116,7 +116,7 @@ fi
 #
 # Script de instalação e configuração do Tomcat9 no GNU/Linux Ubuntu Server 20.04.x
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
-# opção do comando hostname: -d (domain)
+# opção do comando hostname: -I (all-ip-addresses)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
 # opção do comando cut: -d (delimiter), -f (fields)
 echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
@@ -125,7 +125,7 @@ echo
 #
 echo -e "Instalação e Configuração do Apache Tomcat9 no GNU/Linux Ubuntu Server 20.04.x\n"
 echo -e "Porta padrão utilizada pelo Apache Tomcat9.: TCP $PORTTOMCAT"
-echo -e "Após a instalação do Apache Tomcat acessar a URL: http://www.$(hostname -I | cut -d' ' -f1):8080/\n"
+echo -e "Após a instalação do Apache Tomcat acessar a URL: http://$(hostname -I | cut -d' ' -f1):$PORTTOMCAT/\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #

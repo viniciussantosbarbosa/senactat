@@ -260,6 +260,7 @@ PORTTOMCAT="8080"
 #
 # Variável de download da aplicação Agenda de Contatos em Java feita pelo Prof. José de Assis
 # Github do projeto: https://github.com/professorjosedeassis/javaEE (Link atualizado em: 11/01/2022)
+# OBSERVAÇÃO IMPORTANTE: Esse projeto você irá executar junto com o Docente de Programação JAVA.
 AGENDAJAVAEE="https://github.com/professorjosedeassis/javaEE/raw/main/agendaVaamonde.war"
 #
 # Variáveis de criação da Base de Dados da Agenda de Contatos no MySQL
@@ -277,8 +278,8 @@ AGENDAJAVAEE="https://github.com/professorjosedeassis/javaEE/raw/main/agendaVaam
 # (coluna da chave primária)
 #
 # OBSERVAÇÃO: NO SCRIPT: 10-TOMCAT.SH É UTILIZADO AS VARIÁVEIS DO MYSQL DE USUÁRIO E SENHA
-# DO ROOT DO MYSQL CONFIGURADAS NO BLOCO DAS LINHAS: 305 até 310, VARIÁVEIS UTILIZADAS NO SCRIPT: 
-# 07-lamp.sh LINHAS: 251 até 252
+# DO ROOT DO MYSQL CONFIGURADAS NO BLOCO DAS LINHAS: 147 até 150, VARIÁVEIS UTILIZADAS NO SCRIPT: 
+# 02-lamp.sh LINHAS: 251 até 252
 NAME_DATABASE_JAVAEE="dbagenda"
 USERNAME_JAVAEE=$NAME_DATABASE_JAVAEE
 PASSWORD_JAVAEE=$NAME_DATABASE_JAVAEE
@@ -333,8 +334,8 @@ WORDPRESSSALT="https://api.wordpress.org/secret-key/1.1/salt/"
 # opções do comando FLUSH: flush (atualizar), privileges (recarregar as permissões)
 #
 # OBSERVAÇÃO: NO SCRIPT: 11-WORDPRESS.SH É UTILIZADO AS VARIÁVEIS DO MYSQL DE USUÁRIO E SENHA
-# DO ROOT DO MYSQL CONFIGURADAS NO BLOCO DAS LINHAS: 305 até 310, VARIÁVEIS UTILIZADAS NO SCRIPT: 
-# 07-lamp.sh LINHAS: 251 até 252
+# DO ROOT DO MYSQL CONFIGURADAS NO BLOCO DAS LINHAS: 147 até 150, VARIÁVEIS UTILIZADAS NO SCRIPT: 
+# 02-lamp.sh LINHAS: 251 até 252
 CREATE_DATABASE_WORDPRESS="CREATE DATABASE wordpress;"
 CREATE_USER_DATABASE_WORDPRESS="CREATE USER 'wordpress' IDENTIFIED BY 'wordpress';"
 GRANT_DATABASE_WORDPRESS="GRANT USAGE ON *.* TO 'wordpress';"
@@ -395,8 +396,8 @@ PORTNETDATA="19999"
 # opções do comando FLUSH: flush (atualizar), privileges (recarregar as permissões)
 #
 # OBSERVAÇÃO: NO SCRIPT: 13-NETDATA.SH É UTILIZADO AS VARIÁVEIS DO MYSQL DE USUÁRIO E SENHA
-# DO ROOT DO MYSQL CONFIGURADAS NO BLOCO DAS LINHAS: 305 até 310, VARIÁVEIS UTILIZADAS NO SCRIPT: 
-# 07-lamp.sh LINHAS: 251 até 252
+# DO ROOT DO MYSQL CONFIGURADAS NO BLOCO DAS LINHAS:147 até 150, VARIÁVEIS UTILIZADAS NO SCRIPT: 
+# 02-lamp.sh LINHAS: 251 até 252
 CREATE_USER_NETDATA="CREATE USER 'netdata'@'localhost';"
 GRANT_USAGE_NETDATA="GRANT USAGE, REPLICATION CLIENT ON *.* TO 'netdata'@'localhost';"
 FLUSH_NETDATA="FLUSH PRIVILEGES;"

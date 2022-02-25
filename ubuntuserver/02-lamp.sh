@@ -175,7 +175,7 @@ fi
 #
 # Script de instalação e configuração do LAMP-Server no GNU/Linux Ubuntu Server 20.04.x
 # opção do comando echo: -e (enable) habilita interpretador, \n = (new line)
-# opção do comando hostname: -d (domain)
+# opção do comando hostname: -I (all-ip-addresses)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
 # opção do comando cut: -d (delimiter), -f (fields)
 echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
@@ -184,17 +184,16 @@ echo
 #
 echo -e "Instalação e configuração do LAMP-SERVER no GNU/Linux Ubuntu Server 20.04.x\n"
 echo -e "Porta padrão utilizada pelo APACHE (Apache HTTP Server): TCP $PORTAPACHE"
-echo -e "Após a instalação do Apache2 acessar a URL: http://www.$(hostname -I | cut -d' ' -f1)/"
-echo -e "Testar a linguagem HTML acessando a URL: http://www.$(hostname -I | cut -d' ' -f1)/teste.html\n"
+echo -e "Após a instalação do Apache2 acessar a URL: http://$(hostname -I | cut -d' ' -f1)/"
+echo -e "Testar a linguagem HTML acessando a URL: http://$(hostname -I | cut -d' ' -f1)/teste.html\n"
 echo -e "Porta padrão utilizada pelo Oracle MySQL (SGBD): TCP $PORTMYSQL"
 echo -e "Após a instalação do MySQL acessar o console: mysql -u root -p (senha: $SENHAMYSQL)\n"
 echo -e "PHP (Personal Home Page - PHP: Hypertext Preprocessor)"
-echo -e "Após a instalação do PHP acessar a URL: http://www.$(hostname -I | cut -d' ' -f1)/phpinfo.php\n"
+echo -e "Após a instalação do PHP acessar a URL: http://$(hostname -I | cut -d' ' -f1)/phpinfo.php\n"
 echo -e "PERL - Linguagem de programação multi-plataforma\n"
 echo -e "PYTHON - Linguagem de programação de alto nível\n"
 echo -e "PhpMyAdmin - Aplicativo desenvolvido em PHP para administração do MySQL"
-echo -e "Após a instalação do PhpMyAdmin acessar a URL: http://www.$(hostname -I | cut -d' ' -f1)/phpmyadmin\n"
-echo -e "Após a instalação do AWStats acessar a URL: http://$(hostname -I | cut -d' ' -f1)/cgi-bin/awstats.pl\n"
+echo -e "Após a instalação do PhpMyAdmin acessar a URL: http://$(hostname -I | cut -d' ' -f1)/phpmyadmin\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #

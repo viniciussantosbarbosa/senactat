@@ -32,12 +32,12 @@
 # Acesso remoto utilizando o GNU/Linux ou Microsoft Windows
 #
 # Linux Mint Terminal: Ctrl+Alt+T
-# 	ssh vaamonde@172.16.1.10
-#	ssh vaamonde@ssh.pti.intra
+# 	ssh vaamonde@172.16.100.20
+#	ssh vaamonde@ssh.vaamonde.intra
 #
 # Windows Powershell: Menu, Powershell 
-#	ssh vaamonde@172.16.1.10
-#	ssh vaamonde@ssh.pti.intra
+#	ssh vaamonde@172.16.100.20
+#	ssh vaamonde@ssh.vaamonde.intra
 #
 # Linux Mint ou Windows:
 #	apt install putty putty-tools
