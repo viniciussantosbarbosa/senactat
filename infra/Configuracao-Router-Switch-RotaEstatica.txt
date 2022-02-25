@@ -1,0 +1,68 @@
+confi	#Configuração do Switch L3 3560
+enable
+    configure terminal
+        ip routing
+        interface FastEthernet 0/24
+            no switchport
+            ip address 192.168.2.1 255.255.255.0
+            exit
+        ip default-gateway 192.168.2.254
+        end
+    write
+
+show ip interface brief
+show ip route
+=======================================================
+
+#Configuração do Router 1941-2
+enable
+    configure terminal
+        interface GigabitEthernet 0/0
+            description Interface de LAN com Switch L3
+            ip address 192.168.2.254 255.255.255.0
+            no shutdown
+            end
+    write
+
+show ip interface brief
+show ip route
+
+=======================================================
+
+#Configuração do Router 1941-2
+enable
+    configure terminal
+        interface GigabitEthernet 0/1
+            description Interface da WAN - Internet
+            ip address 10.0.0.2 255.255.255.252
+            no shutdown
+            end
+    write
+
+=======================================================
+
+#Configuração do Router 1941-1
+enable
+    configure terminal
+        ip route 192.168.2.0 255.255.255.0 10.0.0.2
+        ip route 192.168.3.0 255.255.255.0 10.0.0.2
+        end
+    write
+
+#Configuração do Router 1941-2
+enable
+    configure terminal
+        ip route 192.168.1.0 255.255.255.0 10.0.0.1
+        ip route 192.168.3.0 255.255.255.0 192.168.2.1
+        end
+    write
+show ip route
+
+#Configuração do Switch L3 3560
+enable
+    configure terminal
+        ip route 192.168.1.0 255.255.255.0 192.168.2.254
+	ip route 0.0.0.0 0.0.0.0 192.168.2.254
+        end
+    write
+show ip route
