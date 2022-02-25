@@ -8,8 +8,8 @@
 # Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
 # Github: https://github.com/vaamonde
 # Data de criação: 13/10/2021
-# Data de atualização: 18/01/2022
-# Versão: 0.14
+# Data de atualização: 13/02/2022
+# Versão: 0.15
 # Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64x
 # Testado e homologado para a versão do Apache2 v2.4.x, MySQL v8.0.x, PHP v7.4.x, 
 # Perl v5.30.x, Python v2.x e v3.x, PhpMyAdmin v4.9.x
@@ -117,14 +117,14 @@ fi
 # [ ] = teste de expressão, == comparação de string, exit 1 = A maioria dos erros comuns na execução,
 # $? código de retorno do último comando executado, ; execução de comando, 
 # opção do comando nc: -v (verbose), -z (DCCP mode), &> redirecionador de saída de erro
-if [ "$(nc -vz 127.0.0.1 $PORTPAPACHE &> /dev/null ; echo $?)" == "0" ]
+if [ "$(nc -vz 127.0.0.1 $PORTAPACHE &> /dev/null ; echo $?)" == "0" ]
 	then
-		echo -e "A porta: $PORTPAPACHE já está sendo utilizada nesse servidor."
+		echo -e "A porta: $PORTAPACHE já está sendo utilizada nesse servidor."
 		echo -e "Verifique o serviço associado a essa porta e execute novamente esse script.\n"
 		sleep 5
 		exit 1
 	else
-		echo -e "A porta: $PORTPAPACHE está disponível, continuando com o script..."
+		echo -e "A porta: $PORTAPACHE está disponível, continuando com o script..."
 		sleep 5
 fi
 if [ "$(nc -vz 127.0.0.1 $PORTMYSQL &> /dev/null ; echo $?)" == "0" ]
@@ -183,18 +183,18 @@ clear
 echo
 #
 echo -e "Instalação e configuração do LAMP-SERVER no GNU/Linux Ubuntu Server 20.04.x\n"
-echo -e "Porta padrão utilizada pelo APACHE (Apache HTTP Server): TCP 80"
-echo -e "Após a instalação do Apache2 acessar a URL: http://www.$(hostname -d | cut -d' ' -f1)/"
-echo -e "Testar a linguagem HTML acessando a URL: http://www.$(hostname -d | cut -d' ' -f1)/teste.html\n"
-echo -e "Porta padrão utilizada pelo Oracle MySQL (SGBD): TCP 3306"
+echo -e "Porta padrão utilizada pelo APACHE (Apache HTTP Server): TCP $PORTAPACHE"
+echo -e "Após a instalação do Apache2 acessar a URL: http://www.$(hostname -I | cut -d' ' -f1)/"
+echo -e "Testar a linguagem HTML acessando a URL: http://www.$(hostname -I | cut -d' ' -f1)/teste.html\n"
+echo -e "Porta padrão utilizada pelo Oracle MySQL (SGBD): TCP $PORTMYSQL"
 echo -e "Após a instalação do MySQL acessar o console: mysql -u root -p (senha: $SENHAMYSQL)\n"
 echo -e "PHP (Personal Home Page - PHP: Hypertext Preprocessor)"
-echo -e "Após a instalação do PHP acessar a URL: http://www.$(hostname -d | cut -d' ' -f1)/phpinfo.php\n"
+echo -e "Após a instalação do PHP acessar a URL: http://www.$(hostname -I | cut -d' ' -f1)/phpinfo.php\n"
 echo -e "PERL - Linguagem de programação multi-plataforma\n"
 echo -e "PYTHON - Linguagem de programação de alto nível\n"
 echo -e "PhpMyAdmin - Aplicativo desenvolvido em PHP para administração do MySQL"
-echo -e "Após a instalação do PhpMyAdmin acessar a URL: http://www.$(hostname -d | cut -d' ' -f1)/phpmyadmin\n"
-echo -e "Após a instalação do AWStats acessar a URL: http://$(hostname -d | cut -d' ' -f1)/cgi-bin/awstats.pl\n"
+echo -e "Após a instalação do PhpMyAdmin acessar a URL: http://www.$(hostname -I | cut -d' ' -f1)/phpmyadmin\n"
+echo -e "Após a instalação do AWStats acessar a URL: http://$(hostname -I | cut -d' ' -f1)/cgi-bin/awstats.pl\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #
@@ -249,7 +249,7 @@ echo -e "Configurando as variáveis do Debconf do MySQL para o Apt, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando | (piper): (Conecta a saída padrão com a entrada padrão de outro comando)
 	echo "mysql-server-8.0 mysql-server/root_password password $SENHAMYSQL" | debconf-set-selections
-	echo "mysql-server-8.0 mysql-server/root_password_again password $AGAIN" | debconf-set-selections
+	echo "mysql-server-8.0 mysql-server/root_password_again password $AGAINMYSQL" | debconf-set-selections
 	debconf-show mysql-server-8.0 &>> $LOG
 echo -e "Variáveis configuradas com sucesso!!!, continuando com o script...\n"
 sleep 5
@@ -306,8 +306,6 @@ echo -e "Atualizando os arquivos de configuração do Apache2 e do PHP, aguarde.
 	cp -v conf/lamp/{apache2.conf,ports.conf,envvars} /etc/apache2/ &>> $LOG
 	cp -v conf/lamp/000-default.conf /etc/apache2/sites-available/ &>> $LOG
 	cp -v conf/lamp/php.ini /etc/php/7.4/apache2/ &>> $LOG
-	cp -v conf/lamp/awstats.pti.intra.conf /etc/awstats/ &>> $LOG
-	cp -v conf/lamp/{awstats,awstatsupdate-cron} /etc/cron.d/ &>> $LOG
 echo -e "Arquivos atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -428,20 +426,6 @@ echo -e "Editando o arquivo de teste teste.html, pressione <Enter> para continua
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
 	vim /var/www/html/teste.html
-echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
-sleep 5
-#
-echo -e "Editando o arquivo de configuração awstats.pti.intra.conf, pressione <Enter> para continuar."
-	# opção do comando read: -s (Do not echo keystrokes)
-	read -s
-	vim /etc/awstats/awstats.pti.intra.conf
-echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
-sleep 5
-#
-echo -e "Editando o arquivo de configuração awstatsupdate-cron, pressione <Enter> para continuar."
-	# opção do comando read: -s (Do not echo keystrokes)
-	read -s
-	vim /etc/cron.d/awstatsupdate-cron
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #

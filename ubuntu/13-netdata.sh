@@ -8,8 +8,8 @@
 # Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
 # Github: https://github.com/vaamonde
 # Data de criação: 02/11/2021
-# Data de atualização: 21/01/2022
-# Versão: 0.11
+# Data de atualização: 20/02/2022
+# Versão: 0.12
 # Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64x
 # Testado e homologado para a versão do Netdata v1.32.x
 #
@@ -123,8 +123,8 @@ clear
 echo
 #
 echo -e "Instalação e Configuração do Netdata no GNU/Linux Ubuntu Server 20.04.x\n"
-echo -e "Porta padrão utilizada pelo Netdata.: TCP 19999"
-echo -e "Após a instalação do Netdata acessar a URL: http://$(hostname -d | cut -d' ' -f1):19999/\n"
+echo -e "Porta padrão utilizada pelo Netdata.: TCP $PORTNETDATA"
+echo -e "Após a instalação do Netdata acessar a URL: http://$(hostname -I | cut -d' ' -f1):19999/\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #
@@ -177,13 +177,15 @@ sleep 5
 #
 echo -e "Instalando as dependências do Netdata, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes), \ (bar left) quebra de linha na opção do apt
+	# opção do comando apt: -y (yes)
 	apt -y install $NETDATAINSTALL &>> $LOG
 echo -e "Instalação das dependências feita com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Clonando o projeto do Netdata do Github, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
+	# opção do comando git clone: --recurse-submodules (initialize and clone submodules within
+    # based on the provided pathspec)
 	git clone --recurse-submodules $NETDATA &>> $LOG
 echo -e "Clonagem do Netdata feita com sucesso!!!, continuando com o script...\n"
 sleep 5
@@ -228,28 +230,10 @@ echo -e "Editando o arquivo de monitoramento mysql.conf, pressione <Enter> para 
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo de monitoramento isc_dhcpd.conf, pressione <Enter> para editar"
-	# opção do comando read: -s (Do not echo keystrokes)
-	read -s
-	vim /usr/lib/netdata/conf.d/python.d/isc_dhcpd.conf
-echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
-sleep 5
-#
 echo -e "Editando o arquivo de monitoramento tomcat.conf, pressione <Enter> para editar"
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
 	vim /usr/lib/netdata/conf.d/python.d/tomcat.conf
-echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
-sleep 5
-#
-echo -e "Editando o arquivo de estatísticas bind_rndc.conf, pressione <Enter> para editar"
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando read: -s (Do not echo keystrokes)
-	# opção do comando chown: -v (verbose), :netdata (group netdata)
-	read -s
-	vim /usr/lib/netdata/conf.d/python.d/bind_rndc.conf
-	chown -v :netdata /etc/bind/rndc.key &>> $LOG
-	rndc stats &>> $LOG
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #

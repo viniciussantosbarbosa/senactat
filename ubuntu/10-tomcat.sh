@@ -124,8 +124,8 @@ clear
 echo
 #
 echo -e "Instalação e Configuração do Apache Tomcat9 no GNU/Linux Ubuntu Server 20.04.x\n"
-echo -e "Porta padrão utilizada pelo Apache Tomcat9.: TCP 8080"
-echo -e "Após a instalação do Apache Tomcat acessar a URL: http://www.$(hostname -d | cut -d' ' -f1):8080/\n"
+echo -e "Porta padrão utilizada pelo Apache Tomcat9.: TCP $PORTTOMCAT"
+echo -e "Após a instalação do Apache Tomcat acessar a URL: http://www.$(hostname -I | cut -d' ' -f1):8080/\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #
