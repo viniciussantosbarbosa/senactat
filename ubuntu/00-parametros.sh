@@ -117,7 +117,7 @@ PORTSSH="22"
 PORTSHELLINABOX="4200"
 #
 #=============================================================================================
-#                        VARIÁVEIS UTILIZADAS NO SCRIPT: 07-lamp.sh                          #
+#                        VARIÁVEIS UTILIZADAS NO SCRIPT: 02-lamp.sh                          #
 #=============================================================================================
 # 
 # Arquivos de configuração (conf) do Serviço de Rede LAMP Server utilizados nesse script
@@ -192,7 +192,7 @@ PORTAPACHE="80"
 PORTMYSQL="3306"
 #
 #=============================================================================================
-#                       VARIÁVEIS UTILIZADAS NO SCRIPT: 09-vsftpd.sh                         #
+#                       VARIÁVEIS UTILIZADAS NO SCRIPT: 03-vsftpd.sh                         #
 #=============================================================================================
 #
 # Arquivos de configuração (conf) do Serviço de Rede VSFTPd utilizados nesse script
@@ -227,7 +227,7 @@ FTPINSTALL="vsftpd"
 PORTFTP="21"
 #
 #=============================================================================================
-#                        VARIÁVEIS UTILIZADAS NO SCRIPT: 10-tomcat.sh                        #
+#                        VARIÁVEIS UTILIZADAS NO SCRIPT: 04-tomcat.sh                        #
 #=============================================================================================
 #
 # Arquivos de configuração (conf) do Servidor Apache Tomcat utilizados nesse script
@@ -296,7 +296,7 @@ CREATE_TABLE_JAVAEE="CREATE TABLE contatos (
 );"
 #
 #=============================================================================================
-#                      VARIÁVEIS UTILIZADAS NO SCRIPT: 11-wordpress.sh                       #
+#                      VARIÁVEIS UTILIZADAS NO SCRIPT: 05-wordpress.sh                       #
 #=============================================================================================
 #
 # Arquivos de configuração (conf) do Site CMS Wordpress utilizados nesse script
@@ -354,36 +354,7 @@ php-intl php-json php-mbstring php-mysql php-xml php-zip php-soap zlibc zlib1g-d
 WORDPRESSDEP=""
 #
 #=============================================================================================
-#                       VARIÁVEIS UTILIZADAS NO SCRIPT: 12-webmin.sh                         #
-#=============================================================================================
-#
-# Arquivos de configuração (conf) do sistema Webmin e Usermin utilizados nesse script
-# 01. /etc/apt/sources.list.d/webmin.list = arquivo de configuração do source list do Apt
-#
-# Arquivos de monitoramento (log) do Serviço do Webmin e do Usermin utilizados nesse script
-# 01. journalctl -t webmin = todas as mensagens referente ao serviço do Webmin
-# 02. tail -f /var/webmin/* = vários arquivos de Log's do serviço do Webmin
-# 03. tail -f /var/usermin/* = vários arquivos de Log's do serviço do Usermin
-#
-# Declarando as variáveis utilizadas nas configurações do Webmin e do Usermin
-# 
-# Variável de download da Chave PGP do Webmin (Link atualizado no dia 30/11/2021)
-WEBMINPGP="http://www.webmin.com/jcameron-key.asc"
-#
-# Variável da instalação das dependências do Webmin e do Usermin
-# opção do caractere: \ (contra barra): utilizado para quebra de linha em comandos grandes
-WEBMINDEP="perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl \
-apt-show-versions python unzip apt-transport-https software-properties-common"
-#
-# Variável de instalação do serviço de rede Webmin e Usermin
-WEBMINNSTALL="webmin usermin"
-#
-# Variáveis das portas de conexão padrão do Webmin e Usermin
-PORTWEBMIN="10000"
-PORTUSERMIN="20000"
-#
-#=============================================================================================
-#                       VARIÁVEIS UTILIZADAS NO SCRIPT: 13-netdata.sh                        #
+#                       VARIÁVEIS UTILIZADAS NO SCRIPT: 06-netdata.sh                        #
 #=============================================================================================
 #
 # Arquivos de configuração (conf) do sistema Netdata utilizados nesse script
@@ -430,3 +401,33 @@ CREATE_USER_NETDATA="CREATE USER 'netdata'@'localhost';"
 GRANT_USAGE_NETDATA="GRANT USAGE, REPLICATION CLIENT ON *.* TO 'netdata'@'localhost';"
 FLUSH_NETDATA="FLUSH PRIVILEGES;"
 #
+#=============================================================================================
+#                       VARIÁVEIS UTILIZADAS NO SCRIPT: 07-webmin.sh                         #
+#=============================================================================================
+#
+# Arquivos de configuração (conf) do sistema Webmin e Usermin utilizados nesse script
+# 01. /etc/apt/sources.list.d/webmin.list = arquivo de configuração do source list do Apt
+#
+# Arquivos de monitoramento (log) do Serviço do Webmin e do Usermin utilizados nesse script
+# 01. journalctl -t webmin = todas as mensagens referente ao serviço do Webmin
+# 02. tail -f /var/webmin/* = vários arquivos de Log's do serviço do Webmin
+# 03. tail -f /var/usermin/* = vários arquivos de Log's do serviço do Usermin
+#
+# Declarando as variáveis utilizadas nas configurações do Webmin e do Usermin
+# 
+# Variável de download da Chave PGP do Webmin (Link atualizado no dia 30/11/2021)
+WEBMINPGP="http://www.webmin.com/jcameron-key.asc"
+#
+# Variável da instalação das dependências do Webmin e do Usermin
+# opção do caractere: \ (contra barra): utilizado para quebra de linha em comandos grandes
+WEBMINDEP="perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl \
+apt-show-versions python unzip apt-transport-https software-properties-common"
+#
+# Variável de instalação do serviço de rede Webmin e Usermin
+WEBMINNSTALL="webmin usermin"
+#
+# Variáveis das portas de conexão padrão do Webmin e Usermin
+PORTWEBMIN="10000"
+PORTUSERMIN="20000"
+#
+#===========================================================================================
