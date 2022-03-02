@@ -1,12 +1,3 @@
-!Conexão no Switch do Professor
-
-! Grupo-01 - Porta do Switch: 01
-! Grupo-02 - Porta do Switch: 02
-! Grupo-03 - Porta do Switch: 03
-! Grupo-04 - Porta do Switch: 04
-! Grupo-05 - Porta do Switch: 05
-! Grupo-06 - Porta do Switch: 06
-
 !Acessando o modo exec user
 enable
 

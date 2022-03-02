@@ -2,7 +2,7 @@
 enable
 
 !Configuração de data/hora em inglês, abreviado ou completo
-!Exemplo: April ou Apr
+!Exemplo: March ou Mar
 !Primeiro Hora no formato: 00:00:00 (hora:minutos:segundos) depois Data no formato: Dia Mês Ano
 clock set ??:??:?? ?? ???????? ????
 
@@ -12,7 +12,7 @@ clock set ??:??:?? ?? ???????? ????
 	!Configuração do nome do equipamento
 	!Obrigatório para a configuração do SSH e demais serviços de redes
 	!Mudar o nome do switch para cada equipamento do seu grupo
-	hostname sw-g??
+	hostname sw-g0?
   
 	!Habilitar o serviço de Criptografia de Senhas do tipo Password Tipo-7
 	service password-encryption
@@ -35,8 +35,8 @@ clock set ??:??:?? ?? ???????? ????
 	enable secret 123@senac
   
 	!Criação dos usuários, senhas do Tipo-5 e privilegios diferenciados
-	!OBSERVAÇÃO: Consultar Planilha de Nomes de Usuários do Grupo
-	!OBSERVAÇÃO IMPORTANTE: se o grupo tiver mais integrandes, acréscentar no script
+	!OBSERVAÇÃO: consultar a planilha de Nomes de Usuários do Grupo
+	!OBSERVAÇÃO IMPORTANTE: se o grupo tiver mais integrandes, acrescentar no script
 	username ??nomealuno?? privilege 15 secret 123@senac
 	username ??nomealuno?? privilege 15 secret 123@senac
 
@@ -44,8 +44,7 @@ clock set ??:??:?? ?? ???????? ????
 	ip domain-name senac.br
   
 	!Criação da chave de criptografia e habilitação do serviço de SSH
-	!Utilizar módulo de criptografia de 1024 bits
-	crypto key generate rsa usage-keys modulus 1024
+	crypto key generate rsa general-keys modulus 1024
 	
 	!Habilitando a versão 2 do serviço do SSH
 	ip ssh version 2
