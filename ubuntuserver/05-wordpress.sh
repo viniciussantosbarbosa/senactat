@@ -22,11 +22,11 @@
 # Informações que serão solicitadas na configuração via Web do WordPress
 # Português do Brasil: Continuar;
 # Informação necessária
-#	Título do site: Bora para Prática;
+#	Título do site: SENAC Tatuapé;
 #	Nome de usuário: admin;
-#	Senha: pti@2018;
+#	Senha: 123@senac;
 #	Confirme a senha: Confirmar o uso de uma senha fraca;
-#	O seu e-mail: vaamonde@vaamonde.pti; Instalar WordPress.
+#	O seu e-mail: senac@vaamonde.intra; Instalar WordPress.
 #
 # Site oficial do Wordpress: https://wordpress.org/
 #
