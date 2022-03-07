@@ -114,15 +114,7 @@ Firewall
 			Liberação do acesso remoto do WebGui e Console do pfSense
 		Save
 
-Gerando a Chave Pública do SSH para a autenticação do usuário vaamonde no pfSense
-Terminal
-	ssh-keygen
-	Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): /home/vaamonde/.ssh/id_rsa_pfsense <Enter>
-	Enter passphrase (empty for no passphrase): <Enter>
-	Enter same passphrase again: <Enter>
-		cd /home/vaamonde/.ssh/
-		ls -lh
-		cat id_rsa_pfsense.pub
+Gerando a Chave Pública do SSH para a autenticação do usuário vaamonde no pfSGB DDR3-SDRA
 
 Criação do usuário de acesso remoto no pfSense
 System

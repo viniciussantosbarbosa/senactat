@@ -6,9 +6,9 @@
 #Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-#Data de criação: 02/07/2021<br>
-#Data de atualização: 05/02/2022<br>
-#Versão: 0.15<br>
+#Data de criação: 07/03/2022<br>
+#Data de atualização: 07/03/2022<br>
+#Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -18,7 +18,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
 
-#Instalação do Linux Mint 64 Bits no Desktop Huananzhi X99-F8 Xeon E5-2678 V3
+#Instalação do Linux Mint 64 Bits no Itautec InfoWay ST4272 (2015)
 
 #01_ Software para criação de Pen Drive Bootável<br>
 
@@ -29,7 +29,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Ventoy: https://www.ventoy.net/en/index.html
 	_ Linux Live USC Creator: https://www.linuxliveusb.com/
 
-#02_ Configurações do Hardware do Desktop Huananzhi X99-F8 Xeon E5-2678 V3<br>
+#02_ Configurações do Hardware do Desktop Itautec InfoWay ST4272<br>
 
 	_ CPU Intel Xeon E5-2678 V3 2.5Ghz 12/24, 32.0GB DDR-4 3000Mhz, SSD Adata SU630 - 240GB, 
 	_ SSD NVMe Lexar NM700 - 512GB, Monitor 17", Ethernet Realtek RTL-8168, Intel UHD Graphics 
