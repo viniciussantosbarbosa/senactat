@@ -73,7 +73,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.10.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.14.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
@@ -88,43 +88,22 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
-#10_ Instalação dos Drives da AMD Radeon e Suporte ao Vulkan<br>
+#10_ Instalação dos Drives da NVIDIA e Intel Graphics<br>
 
-	OBSERVAÇÃO IMPORTANTE: Em Janeiro/2022 a AMD mudou a forma de Baixar e Instalar o Driver
-	da Radeon no GNU/Linux, facilitando a vida utilizando agora um Pacote *.DEB que adiciona
-	os Repositórios Oficiais da AMD Radeon. O procedimento para baixar é o mesmo do vídeo, só 
-	a instalação que mudou.
-	DÚVIDAS: digita o comando: sudo amdgpu-install --help
-
-	_ Recomendado baixar o Driver mais novo do site da AMD: https://www.amd.com/pt/support
-		_ Download AMD Radeon RX Vega 64: https://www.amd.com/pt/support/graphics/radeon-rx-vega-series/radeon-rx-vega-series/radeon-rx-vega-64
-		_ Opção do download: Ubuntu x86 64-Bit Radeon™ Software for Linux® installer version 21.40.2 for
-		_ Ubuntu 20.04.3 (Revision Number 21.40.2, Release Date 19/01/2022)
-		_ Fazer o download do arquivo: amdgpu-install_21.40.2.40502-1_all.deb
-		_ Fazer a instalação utilizando o Gerenciador Gráfico do Linux Mint GDEB (recomendado)
-		_ (clicar duas vezes no instalador e selecionar: Instalar Pacote)
-		_ Acessar o terminal pressionando: Ctrl+Alt+T
-		_ Atualizar as Lista da Apt com o novo Source: sudo apt update
-		_ Instalar os Drivers da AMD Radeon: sudo amdgpu-install
-		_ Finalizar a instalação reinicializando o sistema: reboot
+	_ Recomendado utilizar o Gerenciador de Drives do Linux Mint (ou por linha de comando, não recomendado)
+		_ NVIDIA Corporation: GF108M [GeForce GT 525M]: 
+		_ nvidia-driver-390 (recomendado)
+		_ Aplicar as mudanças
+		_ Reinicializar o Sistema após a instalação (Reiniciar)
 	
-	_ Instalação do suporte ao Vulkan do Driver da AMD Radeon
+	_ Instalar os software necessários para o bom funcionamento dos Drivers da NVIDIA e Intel
 		sudo apt update
-		sudo apt install mesa-vulkan-drivers vulkan-utils vulkan-tools libassimp5 libvulkan1
-		sudo amdgpu-install --usecase=graphics,opencl --opencl=rocr,legacy --vulkan=amdvlk,pro
-		sudo reboot
-	
-	_ Testando o suporte ao Vulkan do Driver da AMD Radeon
-		sudo vulkaninfo | less
+		sudo apt install vainfo intel-gpu-tools
+		sudo update-pciids
+		sudo lspci | grep -i nvidia
+		sudo nvidia-smi
 		sudo glxinfo | less
 		sudo glxgears
-	
-	_ Software de Benchmark para GNU/Linux
-		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
-		_ Hardinfo: https://github.com/lpereira/hardinfo
-		_ Unigine: https://benchmark.unigine.com/
-		_ GpuTest: https://www.geeks3d.com/gputest/
-		_ Basemark: https://www.basemark.com/benchmarks/basemark-gpu/
 
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
