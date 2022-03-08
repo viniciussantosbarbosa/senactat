@@ -10,7 +10,7 @@
 #Data de criação: 26/09/2021<br>
 #Data de atualização: 07/12/2021<br>
 #Versão: 0.10<br>
-#Testado e homologado no Linux Mint 20.2 Uma e Batocera v32
+#Testado e homologado no Linux Mint 20.2 Uma e 20.3 Una e Batocera v32
 
 #Site Oficial do Linux Mint: https://www.linuxmint.com/<br>
 #Site Oficial do Batocera: https://batocera.org/<br>

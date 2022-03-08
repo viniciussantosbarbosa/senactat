@@ -88,23 +88,6 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
-#10_ Instalação dos Drives da NVIDIA e Intel Graphics<br>
-
-	_ Recomendado utilizar o Gerenciador de Drives do Linux Mint (ou por linha de comando, não recomendado)
-		_ NVIDIA Corporation: GF108M [GeForce GT 525M]: 
-		_ nvidia-driver-390 (recomendado)
-		_ Aplicar as mudanças
-		_ Reinicializar o Sistema após a instalação (Reiniciar)
-	
-	_ Instalar os software necessários para o bom funcionamento dos Drivers da NVIDIA e Intel
-		sudo apt update
-		sudo apt install vainfo intel-gpu-tools
-		sudo update-pciids
-		sudo lspci | grep -i nvidia
-		sudo nvidia-smi
-		sudo glxinfo | less
-		sudo glxgears
-
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
