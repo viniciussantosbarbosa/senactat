@@ -92,10 +92,10 @@ https://www.youtube.com/watch?v=vS3SVAzp3QU
 
 #04_ Configuração do Grub para suportar o Dual Boot do Batocera e do Linux Mint
 
-	_ Fazer o download do projeto do Github: https://github.com/vaamonde/raspberry opção: Code, Download Zip;
-	_ OBS4: você também pode clonar o projeto com o comando: git clone https://github.com/vaamonde/raspberry
+	_ Fazer o download do projeto do Github: https://github.com/vaamonde/senactat opção: Code, Download Zip;
+	_ OBS4: você também pode clonar o projeto com o comando: git clone https://github.com/vaamonde/senactat
 	_ Descompactar o arquivo raspberyy-main.zip, botão direito do mouse no arquivo e selecionar: Extrair Aqui;
-	_ Acessar a pasta raspberry-man/batocera como Root: Botão direito do Mouse, selecionar: Abrir como Root;
+	_ Acessar a pasta senactat/linuxmint como Root: Botão direito do Mouse, selecionar: Abrir como Root;
 	_ Selecionar e copiar o arquivo: 15_batocera para o diretório: /etc/grub.d/15_batocera;
 	_ No diretório /etc/grub.d/, acessar o Terminal como Root: Botão direito do Mouse, selecionar: Abrir no Terminal;
 	_ Digitar os seguintes comandos;

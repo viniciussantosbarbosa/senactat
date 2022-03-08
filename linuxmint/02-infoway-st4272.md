@@ -31,8 +31,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #02_ Configurações do Hardware do Desktop Itautec InfoWay ST4272<br>
 
-	_ CPU Intel Xeon E5-2678 V3 2.5Ghz 12/24, 32.0GB DDR-4 3000Mhz, SSD Adata SU630 - 240GB, 
-	_ SSD NVMe Lexar NM700 - 512GB, Monitor 17", Ethernet Realtek RTL-8168, Intel UHD Graphics 
+	_ CPU Intel , .0GB DDR-4 Mhz, , 
+	_ ,Ethernet Realtek RTL-8168, Intel UHD Graphics 
 	_ 630, Asus Strix AMD Radeon RX Vega64, Power Supply Silver Stone ET750, Water Cooler Lian 
 	_ Li Galahad AIO 360mm RGB, Kit Fan Resi Mode Fan Galaxy, Gabinete Lian Li Lancool 215
 
@@ -44,23 +44,16 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	
 #04_ Inicialização da Instalação<br>
 
-	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de desktop gamer 
-	_ devido a placa de vídeo e monitor atingir altas resoluções.
+	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de desktop devido 
+	_ a placa de vídeo e monitor atingir altas resoluções.
 
-#05_ Hard Disk SSD NVMe Lexar NM700 e SSD Adata SU630<br>
+#05_ Hard Disk <br>
 
-	_ Modelo SSD NVMe Lexar NM700, Hard Disk para a instalação do Linux Mint, sem necessidade de
+	_ Modelo , Hard Disk para a instalação do Linux Mint, sem necessidade de
 	_ particionamento (instalação padrão), SSD Adata SU630 usado para armazenamento de arquivos, 
 	_ backup e jogos.
 
-#06_ Placa de Rede Sem-Fio (Wi-Fi/Wireless)
-
-	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já reconhecido no Linux Mint 
-	_ sem necessidade de instalação de Driver/Módulos para o seu funcionamento.
-	_ Teste feito com o Adaptador Sem-Fio TP-Link 150Mbps Modelo TL-WN721N, já reconhecido no Linux 
-	_ Mint sem necessidade de instalação de Driver/Módulos para o seu funcionamento.
-
-#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits<br>
+#06_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -73,14 +66,14 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.14.x suportado até 2025)<br>
+#07_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.14.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
 		sudo apt install linux-oem-20.04 fdutils
 		sudo reboot (Reinicializar o Sistema)
 
-#09_ Instalação dos Aplicativos Básicos<br>
+#08_ Instalação dos Aplicativos Básicos<br>
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
@@ -88,7 +81,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
-#11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
+#09_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/virtualbox.md)
