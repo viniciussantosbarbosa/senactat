@@ -110,7 +110,7 @@ VLAN's por Grupo, sendo elas
 
 ==============================================================================================
 
-!QUINTA ETAPA: Determinação da Portas de Rede de cada VLAN dos Grupos
+!QUINTA ETAPA: Determinação das Portas de Rede de cada VLAN dos Usuários dos Grupos
 
 #01_ Determinação das Portas de Rede das VLAN do Switch 3560
     Grupo-01:   Porta: 2    VLAN: 11    Nome: ??nomealuno??
@@ -149,9 +149,9 @@ VLAN's por Grupo, sendo elas
                 Porta: 5    VLAN: 64    Nome: ??nomealuno??
                 Porta: 6    VLAN: 65    Nome: wifi
 
-!SEXTA ETAPA: Determinação da Subinterfaces de Gateway de cada VLAN dos Grupos
+!SEXTA ETAPA: Determinação da Sub-Interfaces de Gateway de cada VLAN dos Grupos
 
-#01_ Determinação do endereço IPv4 Gateway do Router 2911
+#01_ Determinação do endereço IPv4 de Gateway do Router 2911
     Grupo-01:   Subinterface: 10    IPv4: 172.16.10.254/24
                 Subinterface: 11    IPv4: 172.16.11.254/24
                 Subinterface: 12    IPv4: 172.16.12.254/24
@@ -198,7 +198,8 @@ VLAN's por Grupo, sendo elas
 !SÉTIMA ETAPA: Determinação da Interface Serial de WAN dos Grupos e seu Endereçamento IPv4
 
 Endereçamento IP para Rede de Interligação (WAN) - (GP=Grupo | PI=Primeiro IP | UP=Último IP)
-Interface Serial 0/0/0 e Serial 0/0/1  - Rede: 192.168.1.0/30 - 255.255.255.252
+Interface Serial 0/0/0 e Serial 0/0/1  - Rede Classfull: 192.168.1.0/24 - 255.255.255.0
+OBSERVAÇÃO IMPORTANTE: a rede Classfull 192.168.1.0/24 será segmentada em: 64 Subredes
 
 Grupo-01:	Rede: 192.168.1.0	 PI: 192.168.1.1 - UP: 192.168.1.2    Broadcast: 192.168.1.3
 Grupo-01:   Serial0/0/0 IP: 192.168.1.1/30 --> Grupo-02 Serial0/0/1 IP: 192.168.1.2/30
