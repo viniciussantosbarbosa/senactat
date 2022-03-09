@@ -29,13 +29,13 @@ clock set ??:??:?? ?? ???????? ????
   
 	!Configuração do Banner da mensagem do dia
 	!Desafio: Buscar na Internet imagens ASCII para o Banner
-	banner motd #AVISO: acesso autorizado somente a funcionarios#
+	banner motd #AVISO: acesso autorizado somente a funcionarios da ??NOME_EMPRESA??#
   
 	!Habilitar a senha do tipo secret Tipo-5 para o modo enable privilegiado
 	enable secret 123@senac
   
 	!Criação dos usuários, senhas do Tipo-5 e privilégios diferenciados
-	!Consultar Planilha de Nomes de Usuários do Grupo
+	!OBSERVAÇÃO: consultar a planilha de Nomes de Usuários do Grupo
 	!OBSERVAÇÃO IMPORTANTE: se o grupo tiver mais integrantes, acrescentar no script
 	username ??nomealuno?? privilege 15 secret 123@senac
 	username ??nomealuno?? privilege 15 secret 123@senac

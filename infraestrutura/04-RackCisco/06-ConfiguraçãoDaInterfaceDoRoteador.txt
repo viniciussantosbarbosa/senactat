@@ -11,6 +11,7 @@ enable
 			no shutdown
 			exit
 
+		!OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
 		interface gigabitEthernet 0/0.??
 			description Subinterface da VLAN de SVI do Switch Layer 3 3560
 			encapsulation dot1Q ??

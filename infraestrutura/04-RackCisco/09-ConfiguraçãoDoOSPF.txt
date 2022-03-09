@@ -31,7 +31,7 @@ enable
   !Acessar o modo de configuração global
   configure terminal
   
-  !Configuração da Interface de Loopback 0
+  !Configuração da Interface de Loopback 0 (sempre será a Loopback 0, não mudar)
   interface loopback 0
     
     !Descrição da Interface
@@ -40,6 +40,7 @@ enable
     !Endereço IPv4 para o ID do OSPF
     !Verificar o endereçamento IP de Loopback do seu grupo
     !Endereço IP utilizado para o gerenciamento e métrica do OSPF
+    !OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
     ip address ???.???.???.??? 255.255.255.255
     
     !Inicializando a interface
@@ -51,6 +52,7 @@ enable
   !Configurando o Roteamento de OSPF (?? = número de processo local)
   !Verificar a tabela de Endereçamento para ver o seu número de Processo Local
   !Pode existir vários processo locais do OSPF, cada um com uma finalidade diferente
+  !OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
   router ospf ??
   
     !Identificação do Roteador

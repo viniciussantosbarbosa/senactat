@@ -13,6 +13,7 @@ enable
 		!Configuração do endereçamento IPv4
 		!Verificar a tabela de endereçamento IP dos Grupos
 		!Sempre vai ser o Endereço IPv4 IMPAR na Interface Serial 0/0/0
+		!OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
 		ip address 192.168.1.??? 255.255.255.252
 		
 		!Configurando o Clock Rate, Velocidade do Link
@@ -36,6 +37,7 @@ enable
 		!Configuração do endereçamento IP
 		!Verificar a tabela de endereçamento IP dos Grupos
 		!Sempre vai ser o Endereço IPv4 PAR na Interface Serial 0/0/1
+		!OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
 		ip address 192.168.1.??? 255.255.255.252
 		
 		!Configurando a Largura de Banda

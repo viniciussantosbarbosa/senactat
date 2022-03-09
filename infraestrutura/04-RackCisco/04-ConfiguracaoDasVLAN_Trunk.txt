@@ -1,11 +1,12 @@
-!Acessando o modo EXEC Privilegiado
+!Acessando o modo exec Privilegiado
 enable
 
 	!Acessando o modo de Configuração Global de Comandos
 	configure terminal
 
 		!Criando as VLANs Standard (Padrão) no Switch Layer 3 3560
-		
+		!OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
+
 		!Criação da VLAN padrão
 		vlan ??
 			

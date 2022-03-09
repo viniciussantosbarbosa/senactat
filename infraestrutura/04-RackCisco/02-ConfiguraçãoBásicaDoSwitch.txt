@@ -29,7 +29,7 @@ clock set ??:??:?? ?? ???????? ????
   
 	!Configuração do Banner da mensagem do dia
 	!Desafio: Buscar na Internet imagens ASCII para o Banner
-	banner motd #AVISO: acesso autorizado somente a funcionarios#
+	banner motd #AVISO: acesso autorizado somente a funcionarios da ??NOME_EMPRESA??#
   
 	!Habilitar a senha do tipo secret Tipo-5 para o modo enable privilegiado
 	enable secret 123@senac

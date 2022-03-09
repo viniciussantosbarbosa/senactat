@@ -6,9 +6,11 @@ enable
 	
 	!Configuração do gateway padrão IPv4 do SVI
 	!Utilizado para acessar remotamente o equipamento
+	!OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
 	ip default-gateway 172.16.??.254
   
 	!Configuração da interface virtual VLAN SVI
+	!OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
 	interface vlan ??
 		
 		!Configuração da descrição
