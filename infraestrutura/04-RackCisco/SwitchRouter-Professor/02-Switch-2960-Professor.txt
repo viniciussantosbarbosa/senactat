@@ -4,6 +4,7 @@
 503	Grupo-03	active	Gi1/0/3
 504	Grupo-04	active	Gi1/0/4
 505	Grupo-05	active	Gi1/0/5
+506	Grupo-06	active	Gi1/0/6
 !
 hostname sw-vaamonde
 !

@@ -1,38 +1,39 @@
 !PRIMEIRA ETAPA: Reset do Switch Layer 3 Cisco 3560
 
-OBSERVAÇÃO: Utilizar o Putty para acessar o Switch via Cabo Console.
+OBSERVAÇÃO: Utilizar o PuTTY para acessar o Switch via Cabo Console.
 
-#01_ Deixar o Switch Layer 3 3560 inicializar normalmente
+#01_ Deixar o Switch Layer 3 3560 inicializar normalmente;
 
-#02_ Aguardar os LED's: SYST (Sistema) e STAT (Iniciado) ficar na cor: VERDE
+#02_ Aguardar os LED's: SYST (Sistema) e STAT (Iniciado) ficar na cor: VERDE;
 
-#03_ Após a inicialização, pressionar o Botão: MODE por apróximadamente: 15/20 segundos até 
+#03_ Após a inicialização, pressionar o Botão: MODE por aproximadamente: 15/20 segundos até 
 os LED's piscar em: Ambar e o Switch entrar no modo de: ROMmon, após esse processo e o Switch 
-ser reinicializado  e todas as informações do: running-config serão apagadas.
+sera reinicializado e todas as informações do: startup-config serão apagadas.
 
-OBSERVAÇAO IMPORTANTE: Caso o Switch não volte para o estado de fábrica (falha de reset)
-o
+OBSERVAÇÃO IMPORTANTE: Caso o Switch não volte para o estado de fábrica (falha de reset) executar
+o seguinte procedimento:
+
 1. Pressionar o botão MODE até o switch reinicializar;
-2. Na tela de inicialização, na mensagem de hardware, presssionar o botão MODE para abortar 
+2. Na tela de inicialização, na mensagem de hardware, pressionar o botão MODE para abortar 
    o carregamento do IOS do Switch Cisco;
 3. Digitar o comando: flash_init
-4. Listar o contéudo da Flash: dir flash:
-5. Renomear o arquuivo: rename flash:config.text flash:config.old
+4. Listar o conteúdo da Flash: dir flash:
+5. Renomear o arquivo: rename flash:config.text flash:config.old
 6. Inicializar o sistema: boot
-7. Limpar o arquivo statup-config: erase startup-config
+7. Limpar o arquivo startup-config: erase startup-config
 8. Limpar o banco de dados das VLAN: delete flash:vlan.dat
 9. Reinicializar o Switch: reload
 
-==================================================================================================
+==============================================================================================
 
 !SEGUNDA ETAPA: Reset do Roteador (Router) Cisco 2911
 
-OBSERVAÇÃO: Utilizar o Putty para acessar o Switch via Cabo Console.
+OBSERVAÇÃO: Utilizar o PuTTY para acessar o Switch via Cabo Console.
 
 #01_ Ligar o Router Cisco 2911
 
-#02_ Parar a inicialização do IOS utilizando Ctrl + Break (No Putty utilizar Botão 
-direito do Mouse na Barra de Título opção: Send Command: Break) quando iniciar a descompactação
+#02_ Parar a inicialização do IOS utilizando Ctrl + Break (No PuTTY utilizar Botão direito do 
+Mouse na Barra de Título e escolher a opção: Send Command: Break) quando iniciar a descompactação
 da Imagem do IOS (mensagem de vários ###########)
 
 CUIDADO!!!!!! com a chave de registro que você vai digitar no ROMmon (veja o tópico Obs1 e 2:)
@@ -43,7 +44,7 @@ CUIDADO!!!!!! com a chave de registro que você vai digitar no ROMmon (veja o t�
 
 #05_ O Router vai inicializar sem ler o arquivo de configuração: startup-config da NVRAM.
 
-#06_ Limpando as configurações do Router 2911 e voltando a ler o arquivo startup-confog da NVRAM.
+#06_ Limpando as configurações do Router 2911 e voltando a ler o arquivo startup-config da NVRAM.
     _06.1. Acessar o modo privilegiado: enable <Enter>
     _06.2. Limpar o arquivo startup-config da NVRAM: erase startup-config <Enter>
     _06.3. Acessar o modo de Configuração Global: configure terminal <Enter>
@@ -54,11 +55,11 @@ CUIDADO!!!!!! com a chave de registro que você vai digitar no ROMmon (veja o t�
     _06.8. Verificar a chave de registro: enable <Enter>, show version <Enter>
 
 Obs1: caso você digite chaves diferentes na ROMmon o sistema pode inicializar com caracteres estranhos, 
-essa falaha está associada muitas vezes a velocidade da porta (Padrão 9600), fazer o teste mudando as 
+essa falha está associada muitas vezes a velocidade da porta (Padrão 9600), fazer o teste mudando as 
 velocidades para: 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200. 
 
 Obs2: será necessário alterar novamente a chave de registro para: config-register 0x2102 <Enter>
 configurar a velocidade do console: line console 0 <Enter>, speed 9600 <Enter>, salvar as
-configurações: copy running-config startup e reinicializar o router: reload <Enter>
+configurações: copy running-config startup-config e reinicializar o router: reload <Enter>
 
 ==================================================================================================

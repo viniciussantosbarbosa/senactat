@@ -1,12 +1,12 @@
 !PRIMEIRA ETAPA: Documentação dos Pontos de Redes do Rack Cisco
 
-#01_ Todos os pontos de Rede do Rack Cisco estão indentificados pela sigla: R.Cisco - Ponto 0x.
+#01_ Todos os pontos de Rede do Rack Cisco estão identificados pela sigla: R.Cisco - Ponto 0x.
 
 #02_ Todos os pontos de Rede do Rack Cisco estão conectados nos 2 (dois) primeiros Patch Panel.
     Primeiro Patch Panel: Pontos de 01 até 24
     Segundo Patch Panel.: Pontos de 25 até 30
 
-#03_ Todos os Patch Cords do Rack Cisco estão indentificados pela sigla: R.Cisco - Ponto 0x.
+#03_ Todos os Patch Cords do Rack Cisco estão identificados pela sigla: R.Cisco - Ponto 0x.
 
 #04_ No Rack Cisco existe 2 (dois) Patch Panel que são utilizados para o espelhamento das portas
 dos Switch Cisco Layer 3 3560.
@@ -34,7 +34,7 @@ senha e usuários conforme abaixo:
     Senha padrão: 123@senac
     Usuário: seguir o padrão da documentação dos scripts alterando o seu valor.
     username ??nomealuno?? privilege 15 secret 123@senac
-    OBSERVAÇÃO IMPORTANTE: sempre que aparecer o caracter: ? (interrogação), alterar o seu valor
+    OBSERVAÇÃO IMPORTANTE: sempre que aparecer o carácter: ? (interrogação), alterar o seu valor
 
 #02_ Nos scripts dos Switches e Routers você precisa prestar atenção nas linhas de configuração.
     clock set
@@ -45,7 +45,7 @@ senha e usuários conforme abaixo:
 
 ==============================================================================================
 
-!TERCEIRA ETAPA: Determinação das Redes (Subredes) e VLAN de Cada Grupo
+!TERCEIRA ETAPA: Determinação das Redes (Subrede) e VLAN de Cada Grupo
 
 #01_ Todo o cenário será configurado utilizando VLAN (Virtual-LAN), será determinado 6 (seis)
 VLAN's por Grupo, sendo elas
@@ -53,7 +53,7 @@ VLAN's por Grupo, sendo elas
     VLAN's para cada usuário na rede (4 integrantes)
     VLAN de Rede Sem-Fio (Wi-Fi/Wireless)
 
-#02_ Determinação da Subredes e VLAN de cada Grupo.
+#02_ Determinação das Subredes e VLAN de cada Grupo.
     Grupo-01:   Subredes:   172.16.10.0/24   VLAN:  10  -   utilizada no SVI do Switch Layer 3
                 Subredes:   172.16.11.0/24   VLAN:  11  -   utilizada pelo primeiro usuário da rede
                 Subredes:   172.16.12.0/24   VLAN:  12  -   utilizada pelo segundo usuário da rede

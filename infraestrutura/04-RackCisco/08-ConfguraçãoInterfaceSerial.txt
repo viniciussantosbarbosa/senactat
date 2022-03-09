@@ -7,7 +7,7 @@ enable
 	!Configuração da interface Serial0/0/0
 	interface serial 0/0/0
 	
-		!Descriação da Interface
+		!Descrição da Interface
 		description Interface Grupo-?? para Grupo-??
 		
 		!Configuração do endereçamento IPv4
@@ -30,7 +30,7 @@ enable
 	!Configuração da interface Serial0/0/1
 	interface serial 0/0/1
 	
-		!Descriação da Interface
+		!Descrição da Interface
 		description Interface Grupo-?? para Grupo-??
 		
 		!Configuração do endereçamento IP

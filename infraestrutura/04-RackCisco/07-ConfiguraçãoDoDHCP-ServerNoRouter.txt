@@ -1,4 +1,4 @@
-!Acessando o modo EXEC Privilégiado
+!Acessando o modo EXEC Privilegiado
 enable
 
 	!Acessando o modo de Configuração Global de Comandos
@@ -54,7 +54,7 @@ enable
 			domain-name senac.br
 			end
 
-!Salvando as confgurações
+!Salvando as configurações
 copy running-config startup-config
 
 !Verificando as informações do Pool DHCP Server

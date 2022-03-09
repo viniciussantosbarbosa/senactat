@@ -31,9 +31,9 @@ enable
 			ip address 172.16.??.254 255.255.255.0
 			exit
 
-		!Configurando a Subinterface da VLAN do Teceiro Usuário
+		!Configurando a Subinterface da VLAN do Terceiro Usuário
 		interface gigabitEthernet 0/0.??
-			description Subinterface da VLAN do Teceiro Usuário
+			description Subinterface da VLAN do Terceiro Usuário
 			encapsulation dot1Q ??
 			ip address 172.16.??.254 255.255.255.0
 			exit
@@ -56,7 +56,7 @@ enable
 !Salvando as configurações do Switch
 copy running-config startup-config
 
-!Visualizando as confgurações
+!Visualizando as configurações
 show running-config
 show ip interface brief
 show ip route
