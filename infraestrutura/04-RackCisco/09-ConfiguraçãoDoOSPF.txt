@@ -1,30 +1,30 @@
 !Protocolos de Roteamento utilizados no Cisco
 !
-!====TCP e IP====
+!==== TCP e IP ====
 !TCP (Transmission Control Protocol - Protocolo de Controle de Transmissão - Confiabilidade)
 !UDP (User Datagram Protocol - Protocolo de Datagrama do Usuário - Sem Confiabilidade)
 !IPv4 (Internet Protocol - Protocolo de Internet versão 4 - Decimal)
 !IPv6 (Internet Protocol - Protocolo de Internet versão 6 - Hexadecimal)
 !
-!====Protocolos IGP, EGP e BGP====
+!==== Protocolos IGP, EGP e BGP ====
 !IGP (Interior Gateway Protocol - Protocolo de Gateway Interior)
 !EGP (Exterior Gateway Protocol - Protocolo de Gateway Externo)
 !BGP (Border Gateway Protocol - Protocolo de Gateway de Borda)
 !
-!====Distância Administrativa (Escolha do Melhor Caminho e Confiabilidade do Link)====
+!==== Distância Administrativa (Escolha do Melhor Caminho e Confiabilidade do Link) ====
 !AD   0 --> Interface Diretamente Conectada
 !AD   1 --> Rota Estática, Rota Flutuante ou Gateway Padrão
 !AD  90 --> EIGRP (Enhanced Interior Gateway Routing Protocol - Protocolo de Roteamento de Gateway Interno Aprimorado)
 !AD 110 --> OSPF (Open Shortest Path First - Caminho Mais Curto Primeiro)
 !AD 120 --> RIP (Routing Information Protocol - Protocolo de Informações de Roteamento)
 !
-!Métrica (Custo do Link)
-!Rota Estática	--> Custo 0
-!EIGRP 		--> Largura de Banda, Atraso, Confiabilidade, Utilização, MTU (Maximum Transmission Unit) e Contagem de Saltos
-!OSPF 		--> Largura de Banda Acumulativa, Menor Custo e Menor Distância
-!RIP 		--> Contagem de Saltos no Máximo de 15 (routes)
+!==== Métrica (Custo do Link) ====
+!Rota Estática --> Custo 0
+!EIGRP         --> Largura de Banda, Atraso, Confiabilidade, Utilização, MTU (Maximum Transmission Unit) e Contagem de Saltos
+!OSPF          --> Largura de Banda Acumulativa, Menor Custo e Menor Distância
+!RIP           --> Contagem de Saltos no Máximo de 15 (routes)
 !
-!
+!Configuração do Protocolo OSPF no Router 2911
 !Acessar o modo enable
 enable
 
@@ -84,7 +84,7 @@ enable
     !Configuração da Área 0 (Single Area - Backbone, obrigatória existir)
     !Calculando a máscara coringa: 255.255.255.255 - sua_mascara
     !Exemplo: 255.255.255.255 - 255.255.255.252 = 0.0.0.3
-    !Verificar a tabela de Endereçamento para ver a sua Rede
+    !OBSERVAÇÃO IMPORTANTE: veja o arquivo 00-DocumentacaoDaRede.txt
     network 172.16.???.0 0.0.0.255 area 0
     network 172.16.???.0 0.0.0.255 area 0
     network 172.16.???.0 0.0.0.255 area 0
