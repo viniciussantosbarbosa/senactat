@@ -25,3 +25,4 @@ Grupo-06    SSID: G-06 - Senha: 123@senac
 
 Software de Análise de Rede Sem-Fio
 WiFiMan: https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=pt_BR&gl=US
+SIMET Mobile: https://play.google.com/store/apps/details?id=br.ceptro.simet.client.android&hl=pt_BR&gl=US
