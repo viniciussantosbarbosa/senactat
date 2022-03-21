@@ -90,22 +90,22 @@ Script utilizado nesse vídeo: https://github.com/vaamonde/ubuntu-2004/blob/main
 
 Primeiro Vídeo de Configuração do OpenSSH Server do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou mostrar como customizar os arquivos de configuração, arquivo parâmetros e o script 01-openssh.sh antes de executar no nosso servidor.
 
-[![Config OpenSSH Server](http://img.youtube.com/vi//0.jpg)]( "Config OpenSSH Server")
+[![Config OpenSSH Server](http://img.youtube.com/vi/JqpTTh0S4vU/0.jpg)](https://www.youtube.com/watch?v=JqpTTh0S4vU "Config OpenSSH Server")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=JqpTTh0S4vU
 
 ## **🔴 01-openssh.sh Instalação e Configuração do OpenSSH Server - PARTE-02 🐧**
 
 Segundo Vídeo de Configuração do OpenSSH Server do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou mostrar como clonar o repositório no nosso servidor, acessar o repositório local e executar o script de instalação e configuração do OpenSSH Server.
 
-[![Install OpenSSH Server](http://img.youtube.com/vi//0.jpg)]( "Install OpenSSH Server")
+[![Install OpenSSH Server](http://img.youtube.com/vi/HBRfp1MUkcM/0.jpg)](https://www.youtube.com/watch?v=HBRfp1MUkcM "Install OpenSSH Server")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=HBRfp1MUkcM
 
 ## **🔴 01-openssh.sh Configuração e Monitoramento do OpenSSH Client no Windows e Linux - PARTE-03 🐧**
 
-Terceiro Vídeo de Configuração do OpenSSH Server do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou mostrar como accessar remotamente o servidor Ubuntu utilizando o SSH Client e Shell-In-a-Box, analisar os arquivos de Log para monitorar o acesso remoto e fazer a geração da chave pública/privada para aumentar a segurança do SSH.
+Terceiro Vídeo de Configuração do OpenSSH Server do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou mostrar como acessar remotamente o servidor Ubuntu utilizando o SSH Client e Shell-In-a-Box, analisar os arquivos de Log para monitorar o acesso remoto e fazer a geração da chave pública/privada para aumentar a segurança do SSH.
 
-[![Access OpenSSH Server](http://img.youtube.com/vi//0.jpg)]( "Access OpenSSH Server")
+[![Access OpenSSH Server](http://img.youtube.com/vi/yESGEqv-t3Q/0.jpg)](https://www.youtube.com/watch?v=yESGEqv-t3Q "Access OpenSSH Server")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=yESGEqv-t3Q
