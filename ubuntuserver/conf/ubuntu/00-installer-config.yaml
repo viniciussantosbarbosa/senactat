@@ -38,7 +38,7 @@ network:
         #- 172.16.100.10
         - 172.16.100.254
         #- 8.8.8.8
-        #- 8.8.8.8
+        #- 8.8.4.4
         #
         # Configuração do Nome de Pesquisa DNS do Ubuntu Server
         search:

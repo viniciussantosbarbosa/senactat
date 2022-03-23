@@ -29,6 +29,17 @@ ListenAddress 172.16.100.20
 # Métodos de Autenticação do OpenSSH, utilizar chaves públicas e autenticação por senha
 # Por padrão o Servidor de OpenSSH não trabalhar com Chaves Pública para autenticação, 
 # utilizando o arquivo /etc/passwd para se autenticar no servidor, por motivos de segurança, 
+# é recomendado utilizar chaves públicas e senhas para se autenticar no servidor
+# Descomentar essa opção depois de configurar a chave pública no client e no servidor
+# OBSERVAÇÃO: O Shell-In-a-Box não tem suporte a autenticação via Chave Pública somente 
+# autenticação padrão, para esse cenário é recomendado utilizar a solução Bastillion 
+# (https://www.bastillion.io/)
+#AuthenticationMethods publickey,password
+AuthenticationMethods password
+#
+# Métodos de Autenticação do OpenSSH, utilizar chaves públicas e autenticação por senha
+# Por padrão o Servidor de OpenSSH não trabalhar com Chaves Pública para autenticação, 
+# utilizando o arquivo /etc/passwd para se autenticar no servidor, por motivos de segurança, 
 # é recomendado utilizar chapti@2018aves públicas geradas no cliente com o comando: ssh-keygen 
 # e exportada para o servidor com o comando: ssh-copy-id, chaves localizadas no diretório: 
 # /home/nome_usuário/.ssh/authorized_keys. Essa opção será utiliza em conjunto com a 
