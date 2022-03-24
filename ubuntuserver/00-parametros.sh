@@ -60,13 +60,13 @@ NOMESERVER="webserver"
 #
 # Variável do Nome de Domínio do Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-DOMINIOSERVER="vaamonde.intra"
+DOMINIOSERVER="ALTERAR_PARA_O_SEU_DOMINIO.intra"
 #
 # Variável do Nome (Hostname) FQDN (Fully Qualified Domain Name) do Servidor Ubuntu desse curso
 FQDNSERVER="$NOMESERVER.$DOMINIOSERVER"
 #
 # Variável do Endereço IPv4 principal (padrão) do Servidor Ubuntu desse curso
-IPV4SERVER="172.16.100.20"
+IPV4SERVER="172.16.??.20"
 #
 # Variável do Nome da Interface Lógica do Servidor Ubuntu Server desse curso
 INTERFACE="enp0s3"
@@ -108,7 +108,7 @@ NETPLAN="/etc/netplan/00-installer-config.yaml"
 SSHDEP="openssh-server openssh-client"
 #
 # Variável de instalação dos softwares extras do OpenSSH Server
-SSHINSTALL="net-tools ipcalc nmap tree pwgen neofetch shellinabox"
+SSHINSTALL="net-tools ipcalc sipcalc nmap tree pwgen neofetch shellinabox"
 #
 # Variável da porta de conexão padrão do OpenSSH Server
 PORTSSH="22"
