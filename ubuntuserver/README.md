@@ -1,3 +1,15 @@
+## **Links Oficiais do Ubuntu, Mint, pfSense, Microsoft e VirtualBOX:**
+🔴 Canonical: https://canonical.com/<br>
+🔴 Linux Ubuntu: https://ubuntu.com/<br>
+🔴 Linux Mint: https://www.linuxmint.com/<br>
+🔴 pfSense: https://www.pfsense.org/<br>
+🔴 Microsoft Windows:  https://www.microsoft.com/pt-br/windows<br>
+🔴 Oracle VirtualBOX: https://www.virtualbox.org/
+
+## **Documentação Oficial do Ubuntu Server 20.04.x LTS:**
+🔴 Ubuntu Server Guide: https://ubuntu.com/server/docs<br>
+🔴 Ubuntu Server Guide FULL-PDF: https://assets.ubuntu.com/v1/f954307f-ubuntu-server-guide.pdf
+
 ## **🔴 #01_ Conhecendo o Cenário e Topologia do Curso de Ubuntu Server 20.04.x LTS 🐧**
 
 Primeiro vídeo do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou apresentar o Cenário e Topologia das Máquinas Virtuais utilizadas para instalar e configurar o Ubuntu Server 20.04.x LTS, Linux Mint, pfSense e Windows 10. Vou indicar soluções de Virtualização Bare Metal e Cloud.
@@ -68,7 +80,7 @@ Link da vídeo aula: https://www.youtube.com/watch?v=aUcrnHF0g4I
 
 ## **🔴 #04_ Instalação e Configuração do Ubuntu Server 20.04.x LTS Focal Fossa 🐧**
 
-Quarto vídeo do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou mostrar a instalação e configuração do Ubuntu Server 20.04.3 LTS x64 Bits Focal Fossa, vamos fazer o download da ISO, criar a máquina virtual, instalar o Ubuntu Server, fazer sua configuração do cenário e já deixar o sistema todo atualizado para as próximas etapas.
+Quarto vídeo do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou mostrar a instalação e configuração do Ubuntu Server 20.04.4 LTS x64 Bits Focal Fossa, vamos fazer o download da ISO, criar a máquina virtual, instalar o Ubuntu Server, fazer sua configuração do cenário e já deixar o sistema todo atualizado para as próximas etapas.
 
 [![Instalação Ubuntu](http://img.youtube.com/vi/EAB1PQBxb00/0.jpg)](https://www.youtube.com/watch?v=EAB1PQBxb00 "Instalação Ubuntu")
 

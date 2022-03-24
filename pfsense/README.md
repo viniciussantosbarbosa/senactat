@@ -1,3 +1,11 @@
+## **Links Oficiais do Ubuntu, Mint, pfSense, Microsoft e VirtualBOX:**
+Netgate: https://www.netgate.com/<br>
+pfSense: https://www.pfsense.org/<br>
+Linux Mint: https://www.linuxmint.com/<br>
+Ubuntu: https://ubuntu.com/<br>
+Microsoft: https://www.microsoft.com/pt-br<br>
+Oracle VirtualBOX: https://www.virtualbox.org/
+
 ## ** COMO INSTALAR a nova VERSÃO do pfSENSE FIREWALL v2.6.0 no Oracle VirtualBOX **
 
 Vídeo mostrando os procedimentos básicos para baixar a nova versão do Firewall/Proxy pfSense v2.6.0 e fazer a sua instalação no Oracle VirtualBOX
@@ -34,8 +42,6 @@ O console do UTM pfSense é a primeira etapa da configuração do sistema, raram
 
 Link da vídeo aula: https://www.youtube.com/watch?v=rKef7WePAk0
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-002-ConsoleDopfSense.txt
-
 ## **CONHECENDO o WEBGUI WEBCONFIGURATOR do UTM pfSENSE FIREWALL v2.4.4**
 
 Vídeo mostrando os procedimentos básicos para utilizar o WebGUI (Graphics User Interface) WebConfigurator do UTM pfSense Firewall
@@ -57,8 +63,6 @@ Observação: no vídeo eu falei de PPTP com referência a Fax-Modem, na qual us
 
 Link da vídeo aula: https://www.youtube.com/watch?v=H6VLgpfXvmg
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-003-WebconfiguratorDopfSense.txt
-
 ## **CONHECENDO o DASHBOARD do UTM pfSENSE FIREWALL v2.4.4**
 
 Vídeo mostrando os procedimentos básicos para utilizar o Dashboard (Painel de Instrumentos) do WebGUI (Graphics User Interface) WebConfigurator do UTM pfSense Firewall v2.4.4
@@ -77,8 +81,6 @@ Observação: no vídeo eu falo bastante sobre Plug-in, no pfSense o conceito co
 
 Link da vídeo aula: https://www.youtube.com/watch?v=REF3pCYIKnc&t
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-004-ConfiguracoesDoDashboard.txt
-
 ## **EXPLORANDO o WebGUI do UTM pfSENSE FIREWALL v2.4.4**
 
 Vídeo mostrando os procedimentos básicos para utilizar o WebGUI (Graphics User Interface) do UTM pfSense Firewall v2.4.4
@@ -88,8 +90,6 @@ Toda a administração e configuração do UTM pfSense será feita utilizando o 
 [![WebGui do pfSense](http://img.youtube.com/vi/bbSvFvwQW7M/0.jpg)](http://www.youtube.com/watch?v=bbSvFvwQW7M "WebGui do pfSense")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=bbSvFvwQW7M&t
-
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-005-ConhecendoOsMenus.txt
 
 ## **COMO atualizar o UTM pfSENSE FIREWALL v2.4.4 para nova Versão**
 
@@ -104,8 +104,6 @@ Snapshot: https://pt.wikipedia.org/wiki/C%C3%B3pia_instant%C3%A2nea_de_volume
 [![Atualizando o pfSense](http://img.youtube.com/vi/79OOQOpT794/0.jpg)](http://www.youtube.com/watch?v=79OOQOpT794 "Atualizando o pfSense")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=79OOQOpT794&t
-
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-006-AtualizandoOpfSense.txt
 
 ## **CONFIGURANDO o Acesso Seguro do SSH e CONSOLE no UTM pfSENSE FIREWALL v2.4.4**
 
@@ -123,8 +121,6 @@ FileZilla: https://filezilla-project.org/
 [![Habilitando o SSH do pfSense](http://img.youtube.com/vi/t5gtSGaShn4/0.jpg)](http://www.youtube.com/watch?v=t5gtSGaShn4 "Habilitando o SSH do pfSense")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=t5gtSGaShn4&t
-
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-007-ConfgurandoConsole_SSH.txt
 
 ## **CONFIGURANDO a CA e CERTIFICADOS no UTM pfSENSE FIREWALL v2.4.4**
 
@@ -144,8 +140,6 @@ Criptografia: https://pt.wikipedia.org/wiki/Criptografia
 
 Link da vídeo aula: https://www.youtube.com/watch?v=BvNAVlbdOdo&t
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-008-ConfigurandoCA.txt
-
 ## **ATUALIZAÇÃO DOS VÍDEOS do Curso do UTM/NGFW pfSENSE FIREWALL v2.5.x**
 
 Vídeo mostrando os procedimentos básico das atualizações dos Vídeos de: CONHECENDO o DASHBOARD, COMO atualizar o UTM pfSENSE, CONFIGURANDO o Acesso Seguro do SSH e CONFIGURANDO a CA e CERTIFICADOS do UTM (Unified Threat Management) / NGFW (Next Generation Firewall) Firewall pfSENSE v2.5.2 atualizado no Oracle VirtualBOX
@@ -156,8 +150,6 @@ Esse vídeo tem o objetivo de mostrar as atualizações de parâmetros em mudan�
 
 Link da vídeo aula: https://www.youtube.com/watch?v=sDqrFIFrgN8
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-009-AtualizacaoDoCurso.txt
-
 ## **CONFIGURANDO O NAT PORT FORWARD do UTM/NGFW pfSENSE FIREWALL v2.5.x**
 
 Vídeo mostrando os procedimentos básicos para configurar os Aliases (Apelidos) e regras de NAT (Network address translation) Port Forward e liberação da Interface WAN do UTM (Unified Threat Management) / NGFW (Next Generation Firewall) Firewall pfSENSE v2.5.2 atualizado no Oracle VirtualBOX.
@@ -167,8 +159,6 @@ Em redes de computadores, Network Address Translation (NAT), também conhecido c
 [![NAT Port Forward](http://img.youtube.com/vi/Don6WMYVLHo/0.jpg)](https://www.youtube.com/watch?v=Don6WMYVLHo "NAT Port Forward")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=Don6WMYVLHo
-
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-010-NAT-PortForwarding.txt
 
 ## **CONFIGURANDO a REGRA DE FIREWALL na Interface LAN do UTM/NGFW pfSENSE FIREWALL v2.5.x**
 
@@ -182,8 +172,6 @@ Os conjuntos de regras nas guias da Interface são avaliados em uma base de prim
 
 Link da vídeo aula: https://www.youtube.com/watch?v=SdyV2qO_td0
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-011-Firewall-Rules-LAN.txt
-
 ## **CRIANDO USUÁRIOS, GRUPOS e PRIVILÉGIOS no UTM/NGFW pfSENSE FIREWALL v2.5.x**
 
 Vídeo mostrando os procedimentos básicos para criar e configurar Grupos Locais, Usuários Locais e Privilégios de Acesso no UTM (Unified Threat Management) / NGFW (Next Generation Firewall) Firewall pfSENSE v2.5.2 atualizado no Oracle VirtualBOX.
@@ -194,8 +182,6 @@ O gerenciamento de grupos locais no Firewall pfSense permite controlar e gerenci
 
 Link da vídeo aula: https://www.youtube.com/watch?v=14DpdhR5Veo
 
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-012-UserGroupPrivileges.txt
-
 ## **CONFIGURANDO a REGRA DE FIREWALL na Interface WAN do UTM/NGFW pfSENSE FIREWALL v2.5.x**
 
 Vídeo mostrando os procedimentos básicos para configurar as regras (Rules) de Firewall da Interface WAN (Wide Area Network) do UTM (Unified Threat Management) / NGFW (Next Generation Firewall) Firewall pfSENSE v2.5.2 atualizado no Oracle VirtualBOX.
@@ -205,5 +191,3 @@ As regras de Firewall de Interface WAN são igual as regras de Firewall da Inter
 [![Rules WAN](http://img.youtube.com/vi/pfjmTcdT9W0/0.jpg)](https://www.youtube.com/watch?v=pfjmTcdT9W0 "Rules WAN")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=pfjmTcdT9W0
-
-Documentação da vídeo aula: https://github.com/vaamonde/pfsense/blob/main/script/Etapa-013-Firewall-Rules-WAN.txt
