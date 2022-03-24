@@ -8,13 +8,16 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 25/08/2021
-Data de atualização: 01/09/2021
-Versão: 0.04
-Testado e homologado no Firewall NG UTM Netgate pfSense 2.4.x e 2.5.x
+Data de atualização: 24/03/2022
+Versão: 0.06
+Testado e homologado no Firewall NG UTM Netgate pfSense 2.4.x, 2.5.x e 2.6.x
 
-Atualização da versão do pfSense 2.5.2: https://docs.netgate.com/pfsense/en/latest/releases/2-5-2.html
+Atualização da versão do pfSense 2.6.0: https://docs.netgate.com/pfsense/en/latest/releases/22-01_2-6-0.html
+Versão anterior do pfSense 2.5.2: https://docs.netgate.com/pfsense/en/latest/releases/2-5-2.html
 Versão anterior do pfSense 2.5.1: https://docs.netgate.com/pfsense/en/latest/releases/21-02-2_2-5-1.html
 Versão base do pfSense 2.5.0: https://docs.netgate.com/pfsense/en/latest/releases/2-5-0.html
+
+Migração para o pfSense Plus+ 22.01: https://docs.netgate.com/pfsense/en/latest/install/migrate-to-plus.html
 
 Gerenciamento e autenticação de usuários: https://docs.netgate.com/pfsense/en/latest/usermanager/index.html
 Gerenciador de pacotes: https://docs.netgate.com/pfsense/en/latest/packages/manager.html
@@ -41,7 +44,7 @@ System
 		Groups
 			+ADD
 				Group Properties
-					Group name: boraparapratica
+					Group name: seudominio
 					Scope: Local
 					Description: Grupo de Usuários Admin do pfSense
 					Group membership: Default
@@ -63,13 +66,13 @@ System
 				User Properties
 					Defined USER 
 					Disable: OFF
-					Username: vaamonde
-					Password: pti@2018
-					Confirm Password: pti@2018
-					Full name: Robson Vaamonde
+					Username: seuusuario
+					Password: 123@senac
+					Confirm Password: 123@senac
+					Full name: Seu Usuário
 					Expiration date: OFF
 					Custom Settings: OFF
-					Group membership: Member of: boraparapratica
+					Group membership: Member of: seudominio
 					Certificate: OFF
 				Keys
 					Authorized SSH Keys: Default
@@ -81,8 +84,8 @@ System
 					Defined USER 
 					Disable: OFF
 					Username: openvpn
-					Password: pti@2018
-					Confirm Password: pti@2018
+					Password: 123@senac
+					Confirm Password: 123@senac
 					Full name: Usuário OpenVPN
 					Expiration date: OFF
 					Custom Settings: OFF
@@ -97,7 +100,7 @@ Configuração dos privilégios e atribuídos no pfSense
 System
 	User Manager
 		Groups
-			BoraParaPratica
+			seudominio
 				Edit Group
 					Assigned Privileges
 						+ADD
@@ -126,7 +129,7 @@ System
 System
 	User Manager
 		Users
-			vaamonde
+			seuusuario
 				Edit User
 					Effective Privileges
 						+ADD
@@ -141,8 +144,8 @@ System
 	sudo
 		User Privileges
 			+ADD
-				Group: BoraParaPratica - User: root - Command List: ALL
-				User: vaamonde         - User: root - Command List: ALL
+				Group: seudominio	- User: root - Command List: ALL
+				User.: seuusuario	- User: root - Command List: ALL
 		Save
 
 Desabilitando o usuário admin padrão do pfSense
@@ -155,28 +158,28 @@ System
 						Disabled: ON
 				Save
 
-Autenticando o usuário: vaamonde no Console do pfSense
-Login: vaamonde
-Password: pti@2018
+Autenticando o usuário: seudominio no Console do pfSense
+Login: seudominio
+Password: 123@senac
 	Executando o script do console: sudo /etc/./rc.initial
-		Password: pti@2018
+		Password: 123@senac
 	Criando o script de inicialização: echo "sudo /etc/./rc.initial" > .login
 
-Gerando a Chave Pública do SSH para a autenticação do usuário vaamonde no pfSense
+Gerando a Chave Pública do SSH para a autenticação do usuário: seudominio no pfSense
 Terminal
 	ssh-keygen
-	Enter file in which to save the key (/home/Administrator/.ssh/id_rsa): /home/Administrator/.ssh/id_rsa_pfsense <Enter>
+	Enter file in which to save the key (/home/seuusuario/.ssh/id_rsa): /home/Administrator/.ssh/pfSense-admin <Enter>
 	Enter passphrase (empty for no passphrase): <Enter>
 	Enter same passphrase again: <Enter>
-		cd /home/Administrator/.ssh/
+		cd /home/seudominio/.ssh/
 		ls -lh
-		cat id_rsa_pfsense.pub
+		cat pfSense-admin.pub
 
-Configuração da Chave Pública do SSH no usuário vaamonde do pfSense
+Configuração da Chave Pública do SSH no usuário: seuusuario do pfSense
 System
 	User Manager
 		Users
-			vaamonde
+			seuusuario
 				Edit Users
 					Keys
 						Authorized SSH Keys: (copiar e colocar o conteúdo da chave pública)
@@ -184,7 +187,7 @@ System
 
 Acessando remotamente o pfSense utilizando o Protocolo SSH
 Terminal
-	ssh vaamonde@172.16.1.254
+	ssh seuusuario@172.16.??.254
 	Are you sure want to continue connecting? yes <Enter>
-	Password: pti@2018
-	Password: pti@2018
+	Password: 123@senac
+	Password: 123@Senac

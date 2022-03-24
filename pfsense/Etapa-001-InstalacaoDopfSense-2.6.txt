@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 15/02/2022
-Data de atualização: 15/02/2022
-Versão: 0.01
+Data de atualização: 24/03/2022
+Versão: 0.02
 Testado e homologado no Firewall NG UTM Netgate pfSense 2.4.x, 2.5.x e 2.6.x
 
 Atualização da versão do pfSense 2.6.0: https://docs.netgate.com/pfsense/en/latest/releases/22-01_2-6-0.html
@@ -46,29 +46,30 @@ Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualB
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
 01. Ferramentas;
-	Novo
+		Novo
 02. Nome e Sistema Operacional:
-	Nome: Firewall
-	Pasta da Máquina: (deixar o padrão do sistema) 
-	Tipo: BSD
-	Versão: FreeBSD (64-bit)
-	<Próximo>
+		Nome: Firewall
+		Pasta da Máquina: (deixar o padrão do sistema) 
+		Tipo: BSD
+		Versão: FreeBSD (64-bit)
+		<Próximo>
 03. Tamanho da memória:
-	Tamanho: 1024MB
-	<Próximo>
+		Tamanho: 1024MB
+		<Próximo>
 04. Disco Rígido:
-	Criar um novo disco rígido virtual agora
-	<Criar>
+		Criar um novo disco rígido virtual agora
+		<Criar>
 05. Tipo de arquivo de disco rígido
-	VDI (VirtualBOX Disk Image)
-	<Próximo>
+		VDI (VirtualBOX Disk Image)
+		<Próximo>
 06. Armazenamento em disco rígido físico
-	Dinamicamente alocado
-	<Próximo>
+		Dinamicamente alocado
+		<Próximo>
 07. Localização e tamanho do arquivo
-	Localização: (deixar o padrão do sistema)
-	Tamanho do disco: 16GB
-	<Criar>
+		Localização: (deixar o padrão do sistema)
+		Tamanho do disco: 16GB
+		<Criar>
+
 08. Configurações da Máquina Virtual Firewall (Propriedades/Configurações)
 	Sistema
 		Processador
@@ -95,44 +96,45 @@ Instalação do pfSense: https://docs.netgate.com/pfsense/en/latest/install/down
 
 Terceira etapa: Instalação do pfSense (localizar a ISO descompactada)
 
-01. VM pfSense: Iniciar
+01. VM pfSense: 
+		Iniciar
 02. Selecione o disco rígido de boot
-	Selecionar um arquivo de disco óptico virtual
+		Selecionar um arquivo de disco óptico virtual
 03. Seletor de Discos Ópticos
-	Acrescentar
-	Selecione o arquivo de disco óptico virtual: pfSense-CE-2.6.0-RELEASE-amd64.iso
-	<Abrir>
+		Acrescentar
+		Selecione o arquivo de disco óptico virtual: pfSense-CE-2.6.0-RELEASE-amd64.iso
+		<Abrir>
 04. Not Attached
-	Selecionar: pfSense-CE-2.6.0-RELEASE-amd64.iso
-	<Escolher>
-<Iniciar>
+		Selecionar: pfSense-CE-2.6.0-RELEASE-amd64.iso
+		<Escolher>
+		<Iniciar>
 
 01. Copyright and distribution notice: 
-	Accept - <Enter>
+		Accept - <Enter>
 02. Welcome to pfSense!
-	Install (Install pfSense) - <Enter>
+		Install (Install pfSense) - <Enter>
 03. Keymap Selection
-	Brazilian (accent keys) - <Enter>
-	Continue with br.kdb keymap - <Enter>
+		Brazilian (accent keys) - <Enter>
+		Continue with br.kdb keymap - <Enter>
 04. Partitioning
 	Auto (ZFS) Guided Root-on-ZFS - <Enter>
-	04.1 Configure Options:
-		>>> Install (Proceed with Installation) - <Enter>
-		T Pool Type/Disks:		stripe: 0 disks
-		- Rescan Devices		*
-		- Disk Info 			*
-		N Pool Name				pfsense
-		4 Force 4K Sectores?	YES
-		E Encrypt Disks?		NO
-		P Partition Scheme		GPT (BIOS)
-		S Swap Size				1g
-		M Mirror Swap?			NO
-		W Encrypt Swap?			NO
-	04.2 Select Virtual Device type:
-		stripe Stripe - No Redundancy <Enter>
-	04.3 Hard Disk Selection
-		[*] ada0 VBOX HARDDISK - <Space-Bar> - <Enter>
-	04.4 Last Chance! - <Yes> - <Enter>
+		04.1 Configure Options:
+			>>> Install (Proceed with Installation) - <Enter>
+			T Pool Type/Disks:		stripe: 0 disks
+			- Rescan Devices		*
+			- Disk Info 			*
+			N Pool Name				pfsense
+			4 Force 4K Sectores?	YES
+			E Encrypt Disks?		NO
+			P Partition Scheme		GPT (BIOS)
+			S Swap Size				1g
+			M Mirror Swap?			NO
+			W Encrypt Swap?			NO
+		04.2 Select Virtual Device type:
+			stripe Stripe - No Redundancy <Enter>
+		04.3 Hard Disk Selection
+			[*] ada0 VBOX HARDDISK - <Space-Bar> - <Enter>
+		04.4 Last Chance! - <Yes> - <Enter>
 05. Manual Configuration: <No> - <Enter>
 06. Complete: <Reboot> - <Enter>
 
