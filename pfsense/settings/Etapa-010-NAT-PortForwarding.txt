@@ -29,13 +29,13 @@ Firewall
 		IP
 			+ADD
 				Properties
-					Name: webserver
+					Name: wsSEU_NOME
 					Description: Servidor Webserver Ubuntu
 					Type: Host(s)
 				Host(s)
 					IP or FQDN: 172.16.??.20 - Description: IP Webserver Ubuntu
-					IP or FQDN: webserver  - Description: Hostname Webserver Ubuntu
-					IP or FQDN: webserver.seudominio.intra  - Description: FQDN Webserver Ubuntu
+					IP or FQDN: wsSEU_NOME  - Description: Hostname Webserver Ubuntu
+					IP or FQDN: wsSEU_NOME.SEU_DOMÍNIO.intra  - Description: FQDN Webserver Ubuntu
 			Save
 	Apply Changes
 

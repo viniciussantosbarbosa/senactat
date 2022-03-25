@@ -56,7 +56,7 @@ USUARIODEFAULT="senac"
 SENHADEFAULT="123@senac"
 #
 # Variável do Nome (Hostname) do Servidor Ubuntu desse curso
-NOMESERVER="webserver"
+NOMESERVER="wsSEU_NOME"
 #
 # Variável do Nome de Domínio do Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso

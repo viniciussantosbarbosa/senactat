@@ -40,7 +40,7 @@ Primeira etapa: Acessando o pfSense via Navegador (recomendado utilizar o Navega
 	Netgate® Global Support is available 24/7
 		<Next>
 	General Information
-		Hostname: firewall
+		Hostname: fwSEU_NOME
 		Domain: SEU_DOMINIO.intra
 		Primary DNS Server: 8.8.8.8
 		Secondary DNS Server: 8.8.4.4
