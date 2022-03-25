@@ -41,7 +41,7 @@ Primeira etapa: Acessando o pfSense via Navegador (recomendado utilizar o Navega
 		<Next>
 	General Information
 		Hostname: firewall
-		Domain: pti.intra
+		Domain: SEU_DOMINIO.intra
 		Primary DNS Server: 8.8.8.8
 		Secondary DNS Server: 8.8.4.4
 		Override DNS: (Disable)

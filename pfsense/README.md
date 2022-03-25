@@ -14,7 +14,7 @@ Esta é uma versão agendada regularmente do software pfSense CE e pfSense Plus,
 
 O UTM/NGFW pfSENSE é uma das melhores soluções Open Source de Firewall, Proxy, Router, etc do momento, licenciado sob BSD license, baseado no sistema operacional FreeBSD e adaptado para assumir o papel de um firewall e/ou roteador de redes. Ele possui recursos que muitas vezes, só encontrada em Firewall comerciais caros, já que podemos realizar com o pfSense a imensa maioria das atividades que esperamos de sistemas com este título.
 
-Hoje o pfSense também pode ser considerado um NGFW (Next Generation Firewall), possibilitando a integração de serviços como: Firewall, Proxy, Antivírus, IDS/IPS, Balanceamento de Carga, Relatórios e Inspeção Profunda de Pacotes (DPI).
+Hoje o pfSense também pode ser considerado um UTM (Unified Threat Management) e NGFW (Next Generation Firewall), possibilitando a integração de serviços como: Firewall, Proxy, Antivírus, IDS/IPS, Balanceamento de Carga, Relatórios e Inspeção Profunda de Pacotes (DPI).
 
 [![pfSense 2.6](http://img.youtube.com/vi/guyRA1hMLRg/0.jpg)](https://www.youtube.com/watch?v=guyRA1hMLRg "pfSense 2.6")
 

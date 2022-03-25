@@ -44,7 +44,7 @@ System
 		Groups
 			+ADD
 				Group Properties
-					Group name: seudominio
+					Group name: SEU_DOMINIO
 					Scope: Local
 					Description: Grupo de Usuários Admin do pfSense
 					Group membership: Default
@@ -66,13 +66,13 @@ System
 				User Properties
 					Defined USER 
 					Disable: OFF
-					Username: seuusuario
+					Username: SEU_USUARIO
 					Password: 123@senac
 					Confirm Password: 123@senac
 					Full name: Seu Usuário
 					Expiration date: OFF
 					Custom Settings: OFF
-					Group membership: Member of: seudominio
+					Group membership: Member of: SEU_DOMINIO
 					Certificate: OFF
 				Keys
 					Authorized SSH Keys: Default
@@ -100,7 +100,7 @@ Configuração dos privilégios e atribuídos no pfSense
 System
 	User Manager
 		Groups
-			seudominio
+			SEU_DOMINIO
 				Edit Group
 					Assigned Privileges
 						+ADD
@@ -129,7 +129,7 @@ System
 System
 	User Manager
 		Users
-			seuusuario
+			SEU_USUARIO
 				Edit User
 					Effective Privileges
 						+ADD
@@ -144,8 +144,8 @@ System
 	sudo
 		User Privileges
 			+ADD
-				Group: seudominio	- User: root - Command List: ALL
-				User.: seuusuario	- User: root - Command List: ALL
+				Group: SEU_DOMINIO	- User: root - Command List: ALL
+				User.: SEU_USUARIO	- User: root - Command List: ALL
 		Save
 
 Desabilitando o usuário admin padrão do pfSense
@@ -158,28 +158,28 @@ System
 						Disabled: ON
 				Save
 
-Autenticando o usuário: seudominio no Console do pfSense
-Login: seudominio
+Autenticando o usuário: SEU_USUARIO no Console do pfSense
+Login: SEU_USUARIO
 Password: 123@senac
 	Executando o script do console: sudo /etc/./rc.initial
 		Password: 123@senac
 	Criando o script de inicialização: echo "sudo /etc/./rc.initial" > .login
 
-Gerando a Chave Pública do SSH para a autenticação do usuário: seudominio no pfSense
+Gerando a Chave Pública do SSH para a autenticação do usuário: SEU_USUARIO no pfSense
 Terminal
 	ssh-keygen
-	Enter file in which to save the key (/home/seuusuario/.ssh/id_rsa): /home/Administrator/.ssh/pfSense-admin <Enter>
+	Enter file in which to save the key (/home/SEU_USUARIO/.ssh/id_rsa): /home/Administrator/.ssh/pfSense-admin <Enter>
 	Enter passphrase (empty for no passphrase): <Enter>
 	Enter same passphrase again: <Enter>
-		cd /home/seudominio/.ssh/
+		cd /home/SEU_USUARIO/.ssh/
 		ls -lh
 		cat pfSense-admin.pub
 
-Configuração da Chave Pública do SSH no usuário: seuusuario do pfSense
+Configuração da Chave Pública do SSH no usuário: SEU_USUARIO do pfSense
 System
 	User Manager
 		Users
-			seuusuario
+			SEU_USUARIO
 				Edit Users
 					Keys
 						Authorized SSH Keys: (copiar e colocar o conteúdo da chave pública)

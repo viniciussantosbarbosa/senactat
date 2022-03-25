@@ -29,7 +29,7 @@ System
 		CAs
 			+ADD
 				Create / Edit CA
-					Descriptive name: SeuDominio
+					Descriptive name: SEU_DOMINIO
 					Method: Create an internal Certificate Authority
 					Trust Store: (default)
 					Randomize Serial: (default)
@@ -38,7 +38,7 @@ System
 					Key length (bits): 2048
 					Digest Algorithm: sha256
 					Lifetime (days): 3650
-					Common Name: seudominio-ca
+					Common Name: SEU_DOMINIO-ca
 					Country Code: BR
 					Sate or Province: Sao Paulo
 					City: Sao Paulo
@@ -46,13 +46,13 @@ System
 					Organizational Unit: Matriz Sua Empresa
 			Save
 
-Exportando a CA do SeuDominio do pfSense
+Exportando a CA do SEU_DOMINIO do pfSense
 System
 	Cert. Manager
 		CAs
-		SeuDominio
+		SEU_DOMINIO
 			Export CA
-				Salvar Arquivo: SeuDominio.crt
+				Salvar Arquivo: SEU_DOMINIO.crt
 
 Configuração do Certificado SSL de Serviços do pfSense
 System
@@ -63,12 +63,12 @@ System
 					Method: Create an internal Certificate
 					Descriptive name: Certificado do pfSense
 				Internal Certificate 
-					Certificate authority: SeuDominio
+					Certificate authority: SEU_DOMINIO
 					Key type: RSA
 					Key length: 2048
 					Digest Algorithm: sha256
 					Lifetime (days): 3650
-					Common Name: firewall.seudominio.intra 
+					Common Name: firewall.SEU_DOMINIO.intra 
 					Country Code: BR
 					State or Province: Sao Paulo
 					City: Sao Paulo
@@ -79,7 +79,7 @@ System
 					Alternative Names:
 						IP Address: 172.16.??.254 +Add
 						FQDN or Hostname: firewall +Add
-						FQDN or Hostname: firewall.seudominio.intra
+						FQDN or Hostname: firewall.SEU_DOMINIO.intra
 			Save
 
 Configurando o Suporte ao HTTPS do pfSense
@@ -98,7 +98,7 @@ Firefox
 				Certificados
 					Ver Certificados...
 						Autoridades
-							Importar: SeuDominio.crt <Abrir>
+							Importar: SEU_DOMINIO.crt <Abrir>
 								Confiar nesta CA para identificar sites (yes)
 								Confiar nesta CA para identificar usuários de e-mail (yes)
 							<Ver>
@@ -109,7 +109,7 @@ Google Chrome
 	Digite a URL: chrome://settings/certificates
 		Autoridade
 			Importar
-				SeuDominio.crt <Abrir>
+				SEU_DOMINIO.crt <Abrir>
 					Confiar neste certificado para identificar sites (yes)
 					Confiar neste certificado para identificar usuários de e-mail (yes)
 					Confiar neste certificado para identificar fabricantes de software (yes)
@@ -117,7 +117,7 @@ Google Chrome
 	Digite a URL: chrome://restart
 
 Instalação do CA (Certificate Authority) no Windows
-SeuDominio.crt (clicar duas vezes em cima do certificado)
+SEU_DOMINIO.crt (clicar duas vezes em cima do certificado)
 	Abrir
 		Certificado
 			Geral
@@ -135,12 +135,12 @@ Pesquisa do Windows
 	Gerenciar Certificados de Computador <Sim>
 		Autoridades de Certificação Raiz Confiáveis
 			Certificados
-				seudominio-ca
+				SEU_DOMINIO-ca
 
 Instalação do CA (Certificate Authority) no Linux
-SeuDominio.crt
+SEU_DOMINIO.crt
 		Abrir como Root 
-			Copia: SeuDominio.crt
+			Copia: SEU_DOMINIO.crt
 			Colar: /usr/local/share/ca-certificates
 		Terminal
 			sudo update-ca-certificates

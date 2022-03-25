@@ -41,7 +41,7 @@ Firewall
 
 Criando a primeira regra de Firewall para Liberar a Resolução de DNS
 DNS Server: https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio
-Portas padrão: UDP 53, TCP 53, DNS TLS 843, mDNS 5353
+Portas padrão: UDP 53, TCP 53, DNS TLS 843, RNDC 953, mDNS 5353
 Firewall
 	Rules
 		LAN
