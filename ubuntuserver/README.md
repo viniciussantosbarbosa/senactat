@@ -44,12 +44,12 @@ Vídeo aulas de Bash, Shell, Vim, Git, Github, VSCode e Shell Script Básico:<br
 🔴 POWERSHELL Básico: https://www.youtube.com/watch?v=1yUXXUtvl0o
 
 Documentação das aulas:<br>
-🔴 BASH SHELL Básico: https://github.com/vaamonde/ubuntu-2004/blob/main/scripts/settings/Bash.sh<br>
-🔴 VIM Básico: https://github.com/vaamonde/ubuntu-2004/blob/main/scripts/settings/Vim.sh<br>
-🔴 GIT e GITHUB Básico: https://github.com/vaamonde/ubuntu-2004/blob/main/scripts/settings/Git-Github.sh<br>
-🔴 VSCode Básico: https://github.com/vaamonde/ubuntu-2004/blob/main/scripts/settings/VSCode.sh<br>
-🔴 SHELL SCRIPT Básico: https://github.com/vaamonde/ubuntu-2004/blob/main/scripts/settings/Shell.sh<br>
-🔴 POWERSHELL Básico: https://github.com/vaamonde/ubuntu-2004/blob/main/scripts/settings/PowerShell.sh
+🔴 BASH SHELL Básico: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/Bash.sh<br>
+🔴 VIM Básico: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/Vim.sh<br>
+🔴 GIT e GITHUB Básico: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/Git-Github.sh<br>
+🔴 VSCode Básico: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/VSCode.sh<br>
+🔴 SHELL SCRIPT Básico: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/Shell.sh<br>
+🔴 POWERSHELL Básico: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/PowerShell.sh
 
 Canal do Prof. José de Assis:<br>
 🔴 YouTUBE: https://www.youtube.com/c/RoboticapraticaBr<br>
@@ -80,6 +80,8 @@ O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft p
 
 Link da vídeo aula: https://www.youtube.com/watch?v=faS3gZgKE-A
 
+Script utilizado nesse vídeo: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/settings/VSCode.sh 
+
 ## **🔴 #03_ Como utilizar o VSCODE para Customizar os Scripts antes de executar no seu Servidor Ubuntu Server 20.04.x LTS 🐧**
 
 Terceiro vídeo do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou falar mais detalhes de como customizar os arquivos de script e logo em seguida os arquivos de configuração utilizando o Visual Studio Code VSCODE junto com o comando Git e integrado com o Github antes de executar os scripts no nosso servidor.
@@ -96,7 +98,7 @@ Quarto vídeo do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Scri
 
 Link da vídeo aula: https://www.youtube.com/watch?v=EAB1PQBxb00
 
-Script utilizado nesse vídeo: https://github.com/vaamonde/ubuntu-2004/blob/main/01-InstalacaoDoUbuntuServer-20.04.3-LTS.md
+Script utilizado nesse vídeo: https://github.com/vaamonde/senactat/blob/main/ubuntuserver/install/01-InstalacaoDoUbuntuServer-20.04.4-LTS.md
 
 ## **🔴 #05_ Configurações Básicas do Ubuntu Server 20.04.x LTS Focal Fossa 🐧**
 
