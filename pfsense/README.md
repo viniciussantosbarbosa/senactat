@@ -20,15 +20,19 @@ Hoje o pfSense também pode ser considerado um UTM (Unified Threat Management) e
 
 Link da vídeo aula: https://www.youtube.com/watch?v=guyRA1hMLRg
 
+Documentação da vídeo aula: https://github.com/vaamonde/senactat/blob/main/pfsense/settings/Etapa-001-InstalacaoDopfSense-2.6.txt
+
 ## **COMO HABILITAR a licença GRATUITA Home ou Lab do pfSENSE PLUS+ na versão 2.6.0 CE (Community)**
 
-Vídeo mostrando os procedimentos básicos para fazer uma conta no site do Netagate Store e adquirir uma licença GRATUITA da versão Plus+ do Firewall/Proxy/VPN pfSense e habilitar na versão 2.6.0
+Vídeo mostrando os procedimentos básicos para fazer uma conta no site do Netgate Store e adquirir uma licença GRATUITA da versão Plus+ do Firewall/Proxy/VPN pfSense e habilitar na versão 2.6.0.
 
 O software pfSense® Plus é o firewall mais confiável do mundo. O software conquistou o respeito e a adoração de usuários em todo o mundo - instalado mais de três milhões de vezes. Tornado possível pela tecnologia de código aberto. Transformado em um produto robusto, confiável e confiável pela Netgate.
 
 [![pfSense Plus](http://img.youtube.com/vi/8kxlXUnHYM4/0.jpg)](https://www.youtube.com/watch?v=8kxlXUnHYM4 "pfSense Plus")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=8kxlXUnHYM4
+
+Documentação da vídeo aula: https://github.com/vaamonde/senactat/blob/main/pfsense/settings/Etapa-001-Versao-Plus-22.01.txt
 
 ## **CONHECENDO o console do UTM pfSENSE FIREWALL v2.4.4**
 
