@@ -70,6 +70,16 @@ Indicação de Sites e Material On-Line:<br>
 
 Link da vídeo aula: https://www.youtube.com/watch?v=Ts8CAuPpmVM
 
+## **😍 Visual Studio Code no Linux Mint 20.2 Uma 🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o Editor de Código-Fonte da Microsoft o Visual Studio Code ou VSCode no Linux Mint 20.2 Uma
+
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. Ele é customizável, permitindo que os usuários possam mudar o tema do editor, teclas de atalho e preferências. Ele é um software livre e de código aberto, apesar do download oficial estar sob uma licença proprietária.
+
+[![VSCode](http://img.youtube.com/vi/faS3gZgKE-A/0.jpg)](https://www.youtube.com/watch?v=faS3gZgKE-A "VSCode")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=faS3gZgKE-A
+
 ## **🔴 #03_ Como utilizar o VSCODE para Customizar os Scripts antes de executar no seu Servidor Ubuntu Server 20.04.x LTS 🐧**
 
 Terceiro vídeo do Curso "GRATUITO" de Ubuntu Server 20.04.x LTS DevOps Shell Script, nesse vídeo vou falar mais detalhes de como customizar os arquivos de script e logo em seguida os arquivos de configuração utilizando o Visual Studio Code VSCODE junto com o comando Git e integrado com o Github antes de executar os scripts no nosso servidor.
