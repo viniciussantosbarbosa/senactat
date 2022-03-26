@@ -71,7 +71,7 @@ Dashboard
 			Firewall Logs: ON - Right-05
 				Edit
 				Widgest: Firewall Logs 
-				Number of entries: 15
+				Number of entries: 20
 				Filter actions: ON Pass, ON Block and ON Reject
 				Filter interface: ALL 
 				Update interval: 1 Seconds
